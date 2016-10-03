@@ -1,0 +1,817 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>コールバック関数 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="promise.html" />
+    
+    
+    <link rel="prev" href="../async.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../prepare.html">
+            
+                <a href="../prepare.html">
+            
+                    
+                    予備知識
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../language.html">
+            
+                <a href="../language.html">
+            
+                    
+                    JavaScript言語について
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../language/syntax.html">
+            
+                <a href="../language/syntax.html">
+            
+                    
+                    構文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../language/type.html">
+            
+                <a href="../language/type.html">
+            
+                    
+                    型と値
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../language/function.html">
+            
+                <a href="../language/function.html">
+            
+                    
+                    関数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../language/variable.html">
+            
+                <a href="../language/variable.html">
+            
+                    
+                    変数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../language/class.html">
+            
+                <a href="../language/class.html">
+            
+                    
+                    クラス
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../browser.html">
+            
+                <a href="../browser.html">
+            
+                    
+                    ブラウザの API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../browser/dom.html">
+            
+                <a href="../browser/dom.html">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../async.html">
+            
+                <a href="../async.html">
+            
+                    
+                    非同期プログラミング
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="4.1.1" data-path="callback.html">
+            
+                <a href="callback.html">
+            
+                    
+                    コールバック関数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="promise.html">
+            
+                <a href="promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="event.html">
+            
+                <a href="event.html">
+            
+                    
+                    イベント
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../ajax.html">
+            
+                <a href="../ajax.html">
+            
+                    
+                    Ajax
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../ajax/xhr.html">
+            
+                <a href="../ajax/xhr.html">
+            
+                    
+                    XMLHttpRequest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../ajax/fetch.html">
+            
+                <a href="../ajax/fetch.html">
+            
+                    
+                    その他の方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../ajax/tips.html">
+            
+                <a href="../ajax/tips.html">
+            
+                    
+                    Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../ajax/json.html">
+            
+                <a href="../ajax/json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../jquery.html">
+            
+                <a href="../jquery.html">
+            
+                    
+                    jQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../architecture.html">
+            
+                <a href="../architecture.html">
+            
+                    
+                    フロントエンド設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../architecture/mvc.html">
+            
+                <a href="../architecture/mvc.html">
+            
+                    
+                    MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../architecture/others.html">
+            
+                <a href="../architecture/others.html">
+            
+                    
+                    その他
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="../architecture/hatena.html">
+            
+                <a href="../architecture/hatena.html">
+            
+                    
+                    はてなでのアーキテクチャ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../architecture/example.html">
+            
+                <a href="../architecture/example.html">
+            
+                    
+                    jQuery でのページ設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../nodejs.html">
+            
+                <a href="../nodejs.html">
+            
+                    
+                    Node.js
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="../nodejs/node-and-npm.html">
+            
+                <a href="../nodejs/node-and-npm.html">
+            
+                    
+                    Node.js の基本的な使い方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.2" data-path="../nodejs/dev.html">
+            
+                <a href="../nodejs/dev.html">
+            
+                    
+                    開発用ツール
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../exercise.html">
+            
+                <a href="../exercise.html">
+            
+                    
+                    課題
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1.1" data-path="../exercise/ex1.html">
+            
+                <a href="../exercise/ex1.html">
+            
+                    
+                    課題4.1
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1.1.1" data-path="../exercise/ex1-hint-perl.html">
+            
+                <a href="../exercise/ex1-hint-perl.html">
+            
+                    
+                    Perl ヒント
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.1.2" data-path="../exercise/ex1-hint-scala.html">
+            
+                <a href="../exercise/ex1-hint-scala.html">
+            
+                    
+                    Scala ヒント
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.2" data-path="../exercise/ex2.html">
+            
+                <a href="../exercise/ex2.html">
+            
+                    
+                    課題4.2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.3" data-path="../exercise/ex3.html">
+            
+                <a href="../exercise/ex3.html">
+            
+                    
+                    課題4.3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../omake.html">
+            
+                <a href="../omake.html">
+            
+                    
+                    おまけ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >コールバック関数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30B3;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x306B;&#x3088;&#x308B;&#x975E;&#x540C;&#x671F;&#x51E6;&#x7406;">&#x30B3;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x306B;&#x3088;&#x308B;&#x975E;&#x540C;&#x671F;&#x51E6;&#x7406;</h1><p>GET&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3092;&#x9001;&#x4FE1;&#x3057;&#x3066;&#x7D50;&#x679C;&#x3092;&#x8868;&#x793A;</p><p>Perl &#x3060;&#x3068;&#x540C;&#x671F;&#x7684;&#x306B;&#x51E6;&#x7406;&#x3059;&#x308B;&#x304C;</p><pre><code class="lang-perl"><span class="hljs-keyword">my</span> $ua = LWP::UserAgent-&gt;new;
+<span class="hljs-keyword">my</span> $res = $ua-&gt;request(GET $url); <span class="hljs-comment"># &#x3053;&#x3053;&#x3067;&#x30D6;&#x30ED;&#x30C3;&#x30AF;(&#x5F85;&#x305F;&#x3055;&#x308C;&#x308B;)</span>
+<span class="hljs-keyword">print</span>($res-&gt;content);</code></pre>
+<p>JavaScript &#x3060;&#x3068;&#x3053;&#x3046;&#x306A;&#x308B;</p><pre><code class="lang-javascript">$.get(url, (res) =&gt; {
+    <span class="hljs-built_in">console</span>.log(res);
+});</code></pre>
+<ul><li>&#x901A;&#x4FE1;&#x4E2D;&#x306F;&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x305B;&#x305A;&#x3001;&#x3053;&#x306E;&#x4E0B;&#x306B;&#x66F8;&#x304B;&#x308C;&#x305F;&#x30B3;&#x30FC;&#x30C9;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;
+</li>
+<li>&#x901A;&#x4FE1;&#x7D42;&#x4E86;&#x3057;&#x305F;&#x3089;&#x30B3;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x304C;&#x547C;&#x3073;&#x51FA;&#x3055;&#x308C;&#x308B;
+</li></ul>
+<p>JavaScript &#x3067;&#x306F;&#x3001;&#x3055;&#x307E;&#x3056;&#x307E;&#x306A;&#x51E6;&#x7406;&#x3067;&#x30B3;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x3092;&#x5229;&#x7528;&#x3059;&#x308B;</p><p>&#x4F8B;: &#x30E9;&#x30FC;&#x30E1;&#x30F3;&#x30BF;&#x30A4;&#x30DE;&#x30FC;</p><pre><code class="lang-javascript"><span class="hljs-comment">// 180&#x79D2;&#x5F8C;&#x306B;alert&#x3059;&#x308B;</span>
+setTimeout(() =&gt; {
+    alert(<span class="hljs-string">&apos;&#x30E9;&#x30FC;&#x30E1;&#x30F3;&#x3067;&#x304D;&#x305F;&#x3088;&#xFF01;&apos;</span>);
+}, <span class="hljs-number">180</span> * <span class="hljs-number">1000</span>);</code></pre>
+<h2 id="&#x30B3;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x5730;&#x7344;">&#x30B3;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x5730;&#x7344;</h2><p>&#x30B3;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x51E6;&#x7406;&#x304C;&#x91CD;&#x306A;&#x308B;&#x3068;&#x3001;&#x3069;&#x3093;&#x3069;&#x3093;&#x30CD;&#x30B9;&#x30C8;&#x304C;&#x6DF1;&#x304F;&#x306A;&#x3063;&#x3066;&#x3044;&#x304D;&#x3001;&#x8AAD;&#x307F;&#x3065;&#x3089;&#x3044;&#x30B3;&#x30FC;&#x30C9;&#x306B;&#x306A;&#x308B;</p><pre><code class="lang-javascript">MongoClient.connect(<span class="hljs-string">&apos;mongodb://localhost:27017/rssDataBase&apos;</span>, (err, db) =&gt; {
+    fs.readFile(<span class="hljs-string">&apos;./feed.xml&apos;</span>, <span class="hljs-string">&apos;utf8&apos;</span>, (err, rssString) =&gt; {
+        parseString(rssString, (err, result) =&gt; {
+            <span class="hljs-keyword">const</span> items = result.rss.channel[<span class="hljs-number">0</span>].item;
+            <span class="hljs-keyword">const</span> data  = [];
+            items.forEach((item) =&gt; {
+                request(item.link[<span class="hljs-number">0</span>], (err, res) =&gt; {
+                    data.push({
+                        url  : res.request.href,
+                        body : res.body,
+                    });
+                    <span class="hljs-keyword">if</span> (data.length === items.length) {
+                        db.collection(<span class="hljs-string">&apos;entries&apos;</span>).insertMany(data, (err, result) =&gt; {
+                            db.close();
+                        });
+                    }
+                });
+            });
+        });
+    });
+});</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../async.html" class="navigation navigation-prev " aria-label="Previous page: 非同期プログラミング">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="promise.html" class="navigation navigation-next " aria-label="Next page: Promise">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"コールバック関数","level":"4.1.1","depth":2,"next":{"title":"Promise","level":"4.1.2","depth":2,"path":"async/promise.md","ref":"async/promise.md","articles":[]},"previous":{"title":"非同期プログラミング","level":"4.1","depth":1,"path":"async.md","ref":"async.md","articles":[{"title":"コールバック関数","level":"4.1.1","depth":2,"path":"async/callback.md","ref":"async/callback.md","articles":[]},{"title":"Promise","level":"4.1.2","depth":2,"path":"async/promise.md","ref":"async/promise.md","articles":[]},{"title":"イベント","level":"4.1.3","depth":2,"path":"async/event.md","ref":"async/event.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"async/callback.md","mtime":"2016-10-03T07:52:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-03T08:03:02.616Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
