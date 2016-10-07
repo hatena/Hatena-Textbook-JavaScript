@@ -33,5 +33,5 @@
 ブログ
 ----------------------------------------------------------------
 * [JSer.info](http://jser.info/)
-* [②ality – JavaScript and more](http://jser.info/)
+* [②ality – JavaScript and more](http://www.2ality.com/)
 * [JS.next](http://js-next.hatenablog.com/)
