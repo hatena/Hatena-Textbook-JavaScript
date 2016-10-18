@@ -20,7 +20,7 @@ $.get("http://example.com/aaa")
 さっきのコードはこうなる。ちょっと読みやすくなる
 ```javascript
 let db;
-MongoClient.connect('mongodb://localhost:27017/rssDataBase');
+MongoClient.connect('mongodb://localhost:27017/rssDataBase')
     .then((_db) => {
         db = _db;
         return fs.readFile('./feed.xml', 'utf8');
@@ -44,7 +44,6 @@ MongoClient.connect('mongodb://localhost:27017/rssDataBase');
     .then(() => {
         db.close();
     });
-});
 ```
 
 使えるところではガンガン使っていこう
