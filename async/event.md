@@ -26,7 +26,7 @@
 
 ## `addEventListener`
 
-* `element.addEventListener(even tName, callback, useCapture)`
+* `element.addEventListener(eventName, callback, useCapture)`
   * ある要素のあるイベントに対してコールバックを設定する
 
 ```javascript
