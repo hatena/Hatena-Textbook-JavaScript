@@ -714,7 +714,7 @@
         <span class="hljs-comment">// ...      </span>
     });</code></pre>
 <p>&#x3055;&#x3063;&#x304D;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x306F;&#x3053;&#x3046;&#x306A;&#x308B;&#x3002;&#x3061;&#x3087;&#x3063;&#x3068;&#x8AAD;&#x307F;&#x3084;&#x3059;&#x304F;&#x306A;&#x308B;</p><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> db;
-MongoClient.connect(<span class="hljs-string">&apos;mongodb://localhost:27017/rssDataBase&apos;</span>);
+MongoClient.connect(<span class="hljs-string">&apos;mongodb://localhost:27017/rssDataBase&apos;</span>)
     .then((_db) =&gt; {
         db = _db;
         <span class="hljs-keyword">return</span> fs.readFile(<span class="hljs-string">&apos;./feed.xml&apos;</span>, <span class="hljs-string">&apos;utf8&apos;</span>);
@@ -737,8 +737,7 @@ MongoClient.connect(<span class="hljs-string">&apos;mongodb://localhost:27017/rs
     })
     .then(() =&gt; {
         db.close();
-    });
-});</code></pre>
+    });</code></pre>
 <p>&#x4F7F;&#x3048;&#x308B;&#x3068;&#x3053;&#x308D;&#x3067;&#x306F;&#x30AC;&#x30F3;&#x30AC;&#x30F3;&#x4F7F;&#x3063;&#x3066;&#x3044;&#x3053;&#x3046;</p>
                                 
                                 </section>
@@ -782,7 +781,7 @@ MongoClient.connect(<span class="hljs-string">&apos;mongodb://localhost:27017/rs
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Promise","level":"4.1.2","depth":2,"next":{"title":"イベント","level":"4.1.3","depth":2,"path":"async/event.md","ref":"async/event.md","articles":[]},"previous":{"title":"コールバック関数","level":"4.1.1","depth":2,"path":"async/callback.md","ref":"async/callback.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"async/promise.md","mtime":"2016-10-03T07:52:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-03T08:03:02.616Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Promise","level":"4.1.2","depth":2,"next":{"title":"イベント","level":"4.1.3","depth":2,"path":"async/event.md","ref":"async/event.md","articles":[]},"previous":{"title":"コールバック関数","level":"4.1.1","depth":2,"path":"async/callback.md","ref":"async/callback.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"async/promise.md","mtime":"2016-10-21T06:51:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-21T07:08:27.802Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
