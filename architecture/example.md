@@ -24,7 +24,7 @@ jQuery でのページ設計
         const $bookmark = $.parseHTML(bookmarkTemplate({
             body : $bookmarkInput.val(),  
         }))
-        $bookmarkList.append($commnet);
+        $bookmarkList.append($bookmark);
     });
 
     // ...
