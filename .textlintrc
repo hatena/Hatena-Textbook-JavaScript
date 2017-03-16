@@ -1,6 +1,12 @@
 {
     "rules": {
-        "preset-jtf-style": true,
-        "preset-ja-technical-writing": true
-    }
+        "preset-jtf-style": {
+            "4.2.7.コロン(：)": false,
+            "4.3.1.丸かっこ（）": false,
+        },
+        "preset-ja-technical-writing": {
+            "no-exclamation-question-mark": false,
+            "no-start-duplicated-conjunction": false,
+        },
+    },
 }
