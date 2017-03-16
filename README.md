@@ -1,17 +1,17 @@
-はてな教科書 JavaScript 編
+はてな教科書JavaScript編
 ================================================================
 
 ## 講義の目的
 
-* JavaScript について、自分で調べて学習するための基礎知識を身につける
+* JavaScriptについて、自分で調べて学習するための基礎知識を身につける
   * リファレンスをひけば良い部分は覚えない
 
 
 ## 話の流れ
 
-* JavaScript の言語コア部分
+* JavaScriptの言語コア部分
   * 構文とか
-* Web と JS にまつわるあれこれ
+* WebとJSにまつわるあれこれ
   * DOM
   * 非同期プログラミング
   * Ajax
@@ -29,4 +29,4 @@
   <img alt="クリエイティブ・コモンズ・ライセンス" src="https://licensebuttons.net/l/by-nc-sa/2.1/jp/88x31.png"/>
 </a>
 
-この作品は <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.1/jp/">クリエイティブ・コモンズ 表示 - 非営利 - 継承 2.1 日本 ライセンス</a> の下に提供されています。
+この作品は <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.1/jp/">クリエイティブ・コモンズ表示 - 非営利 - 継承2.1日本ライセンス</a> の下に提供されています。

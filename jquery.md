@@ -10,20 +10,20 @@ jQuery
 * 最近はアンチ意見も多い
 
 
-jQuery の使い方
+jQueryの使い方
 ----------------------------------------------------------------
 
 ### jQueryについて調べる
 
 - 公式ドキュメント http://api.jquery.com/
 - 他のサイトはできるだけ見ない！
-  - jQuery 周辺は古い情報が溢れてる
+  - jQuery周辺は古い情報が溢れてる
 
 
-### jQuery を使う
+### jQueryを使う
 
-- この講義では CDN からロードします
-  - 実際のサービスでは他の JS と結合して配信したり社内 CDN を使ったりする
+- この講義ではCDNからロードします
+  - 実際のサービスでは他のJSと結合して配信したり社内CDNを使ったりする
 
 ```html
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
@@ -32,7 +32,7 @@ jQuery の使い方
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script>
 ```
 
-ロードしたらこのように使える
+ロードしたらこのように使える。
 
 ```javascript
 // window.jQuery または window.$ で参照できる
@@ -59,12 +59,12 @@ var $p = $(p);
 ```
 
 
-### jQuery オブジェクト
+### jQueryオブジェクト
 
 * `jQuery` 関数は `jQuery` オブジェクトを返す
 * `jQuery` オブジェクトは何らかの要素のコレクション
-  * 普通は DOM ノード
-  * 中身が 0 個のこともある
+  * 普通はDOMノード
+  * 中身が0個のこともある
   * 中身はただのオブジェクトであることもある
 
 ```javascript
@@ -76,9 +76,9 @@ obj.trigger("click");  // alert が表示される
 ```
 
 
-### DOM 操作
+### DOM操作
 
-jQuery オブジェクトは DOM 操作の為の API を持つ
+jQueryオブジェクトはDOM操作の為のAPIを持つ。
 
 - ページ内のh1タグのテキストを変更する
 
@@ -92,7 +92,7 @@ $('h1').text('foo');
 $('h1').append($('<img>').attr('src','http://〜〜'));
 ```
 
-- DOM 要素を直接参照することもできる
+- DOM要素を直接参照することもできる
 
 ```javascript
 $('div').eq(0).html() === $('div')[0].innerHTML;
@@ -124,7 +124,7 @@ $(document).trigger('mousemove');
 ```
 
 
-### jQuery を使ったページの初期化の流れ
+### jQueryを使ったページの初期化の流れ
 
 + ページが読まれたら
 + 何かセレクタで要素を集めて
@@ -160,8 +160,8 @@ $(() => {
 
 ### Ajax
 
-* jQuery には Ajax 用のメソッドも入ってる
-* ver 1.8 より Promise ベースに
+* jQueryにはAjax用のメソッドも入ってる
+* ver 1.8よりPromiseベースに
 
 #### $.ajax
 
@@ -181,7 +181,7 @@ $.ajax({
 
 #### $.get, $.post
 
-`$.ajax` のエイリアス
+`$.ajax` のエイリアス。
 
 ```javascript
 $.get(url);
@@ -192,7 +192,7 @@ $.post(url, { body: 'foo' });
 複雑な要素をページに挿入したい
 ----------------------------------------------------------------
 
-- たとえば，ブログのエントリをJSで出したいとき，ブログのエントリをJSで組み立てるのは大変
+- たとえば、ブログのエントリをJSで出したいとき、ブログのエントリをJSで組み立てるのは大変
 - createElement + appendChildしまくってもできるけど読みにくい
 
 ```html
@@ -223,7 +223,7 @@ $('.articles').append($article);
 ```
 
 - テンプレートを使うときれいに書ける
-  - underscore.js の [`_.template`](http://underscorejs.org/#template) を使ったり
+  - underscore.jsの [`_.template`](http://underscorejs.org/#template) を使ったり
   - テンプレートリテラルを使ったり  
 
 ```javascript

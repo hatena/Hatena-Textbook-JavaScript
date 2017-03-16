@@ -1,9 +1,9 @@
 Ajax
 ================================================================
 
-## Ajax とは
+## Ajaxとは
 
-- ページ遷移せず、JS で HTTP 通信を行う処理の総称
+- ページ遷移せず、JSでHTTP通信を行う処理の総称
 - `Asynchronous JavaScript and XML` の略
   - 昔は `XMLHttpRequest` というAPIを使っていた
 

@@ -1,14 +1,14 @@
 XMLHttpRequest
 ================================================================
 
-- IE5 で導入され、後に標準化された
-- Ajax 用ライブラリは皆 XMLHttpRequest のラッパー
+- IE5で導入され、後に標準化された
+- Ajax用ライブラリは皆XMLHttpRequestのラッパー
   - 細かい制御をしようとすると直接さわる必要があるかも
 
 
 ## 生 `XMLHttpRequest` のようす
 
-生で使うことは滅多にないが、一応雰囲気だけ知っておこう
+生で使うことは滅多にないが、一応雰囲気だけ知っておこう。
 
 ```javascript
 // リクエストのオブジェクトを作成
@@ -31,7 +31,7 @@ xhr.onreadystatechange = (e) => {
 xhr.send(null);
 ```
 
-POST の場合
+POSTの場合。
 
 ```javascript
 var xhr = new XMLHttpRequest();

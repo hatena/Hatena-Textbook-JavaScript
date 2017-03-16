@@ -5,19 +5,19 @@ DOM
 var source = document.getElementById('template').innerHTML;
 ```
 
-* HTML ドキュメントの中身を操作しよう
-* ブラウザの API を知ろう
-  * jQuery 等ライブラリを使うと DOM を直接操作する機会は減るが、知っておく必要はある
+* HTMLドキュメントの中身を操作しよう
+* ブラウザのAPIを知ろう
+  * jQuery等ライブラリを使うとDOMを直接操作する機会は減るが、知っておく必要はある
 
 
-## DOM とは
+## DOMとは
 
-* Document Object Model の略
-* HTML 文書を JS で操作する API を定めたもの
+* Document Object Modelの略
+* HTML文書をJSで操作するAPIを定めたもの
   * API: メソッドや定数といったインターフェイス
 
 
-## DOM の基本的な考えかた
+## DOMの基本的な考えかた
 
 ![](http://cdn-ak.f.st-hatena.com/images/fotolife/c/cho45/20100721/20100721183313.png)
 
@@ -25,42 +25,42 @@ var source = document.getElementById('template').innerHTML;
   * 一番上には `document` ノード (文書ノード) がある
 
 
-## DOM の仕様
+## DOMの仕様
 
 * [DOM Standards](http://dom.spec.whatwg.org/) (WHATWG)
 * [DOM 4](http://www.w3.org/TR/dom/) (W3C)
 
 最近はここら辺。 ここらへんの文書がどうなってるのかややこしい。
 
-* 通称 DOM Level 0 =  標準化されてなかったものの総称
-  * DOM Level 0 の多くも HTML5 で標準化されている
-* DOM Level 1 = とても基本的な部分 (Element がどーとか)
-* DOM Level 2 = まともに使える DOM (Events とか)
+* 通称DOM Level 0 =  標準化されてなかったものの総称
+  * DOM Level 0の多くもHTML5で標準化されている
+* DOM Level 1 = とても基本的な部分 (Elementがどーとか)
+* DOM Level 2 = まともに使えるDOM (Eventsとか)
 * DOM Level 3 = いろいろあるが実装されてない
 
 
-## DOM の構成要素
+## DOMの構成要素
 
 * `Node`
-  * 多くの DOM の構成要素のベースインターフェイス
+  * 多くのDOMの構成要素のベースインターフェイス
 * `Element`
-  * HTML の要素を表現する
+  * HTMLの要素を表現する
 * `Attr`
-  * HTML の属性を表現する
+  * HTMLの属性を表現する
 * `Text`
-  * HTML の地のテキストを表現する
+  * HTMLの地のテキストを表現する
 * `Document`
-  * HTML のドキュメントを表現する
+  * HTMLのドキュメントを表現する
 * `DocumentFragment`
   * 文書木に属さない木の根を表現する
 
 - `Element` も `Text` も `Node` のサブインターフェイス
-- DOM 3 までは `Attr` も `Node` だったが DOM 4 では違う
+- DOM 3までは `Attr` も `Node` だったがDOM 4では違う
 
 
 ## DOM API
 
-よく使うメソッドだけ紹介
+よく使うメソッドだけ紹介。
 
 * `document.createElement('div')`
   * 要素ノードをつくる
@@ -82,12 +82,12 @@ var source = document.getElementById('template').innerHTML;
 
 ## 例: テキストノードを要素に追加する
 
-このようなページで
+このようなページで。
 ```html
 <div id="container"></div>
 ```
 
-次のスクリプトを実行する
+次のスクリプトを実行する。
 ```javascript
 // `<div>foobar</div>` を作成
 var elementNode = document.createElement('div');
@@ -99,7 +99,7 @@ var containerNode = document.getElementById('container');
 containerNode.appendChild(elementNode);
 ```
 
-結果
+結果。
 
 ```html
 <div id="container">

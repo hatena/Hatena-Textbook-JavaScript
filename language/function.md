@@ -3,7 +3,7 @@
 
 ## 関数は値
 
-* JS では関数は値
+* JSでは関数は値
   * `Function` クラスのオブジェクト
   * 第一級のオブジェクトというやつ
 * 変数に代入できる
@@ -29,7 +29,7 @@ var ho = function () {
 say(ho);  // SAY HO !!!
 ```
 
-より一般的な例
+より一般的な例。
 ```javascript
 [1, 2, 3].forEach(function (i) {
     console.log(i * 2);
@@ -39,7 +39,7 @@ say(ho);  // SAY HO !!!
 
 ## 関数の定義
 
-関数宣言と関数式がある
+関数宣言と関数式がある。
 
 ### 関数宣言
 
@@ -65,7 +65,7 @@ var add = function (x, y) {
 
 ### 関数宣言と関数式の使い分け
 
-これらは、定義した関数を呼べるようになるタイミングが異なる
+これらは、定義した関数を呼べるようになるタイミングが異なる。
 
 - 関数宣言: 宣言の位置より上で関数を呼べる
   ```javascript
@@ -84,7 +84,7 @@ var add = function (x, y) {
 ## 引数の受け取り
 
 * かっこの中に書く
-* 値を返すときは return 必須
+* 値を返すときはreturn必須
 
 ```javascript
 function add (v1, v2) {
@@ -162,7 +162,7 @@ sliceNodes(0, 3);
 
 ## Arrow Function
 
-- ES2015 で導入
+- ES2015で導入
 - メリット
   - 書きやすい
   - 定義したスコープの `this` が渡される
@@ -186,7 +186,7 @@ var square = x => x * x;
 
 ### 定義したスコープの `this` が渡される
 
-前項で述べた `this` の扱いが簡単になります
+前項で述べた `this` の扱いが簡単になります。
 
 ```javascript
 var obj = {
@@ -210,6 +210,6 @@ var f = obj.newFunc;
 f();  // undefined
 ```
 
-- 以降の説明では、なるべく Arrow Function を使います
-  - 課題でも使って OK
+- 以降の説明では、なるべくArrow Functionを使います
+  - 課題でも使ってOK
   - 使える環境ではガンガン使っていこう

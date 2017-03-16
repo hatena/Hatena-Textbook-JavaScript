@@ -5,8 +5,8 @@
 
 - 任意のライブラリの使用を許可します
   - ライブラリの挙動は理解しておくこと！
-  - おすすめは jQuery, underscorejs
-- jQuery 検索用キーワード
+  - おすすめはjQuery, underscorejs
+- jQuery検索用キーワード
   - click
   - on('scroll', ...
   - ajax

@@ -1,12 +1,12 @@
-jQuery でのページ設計
+jQueryでのページ設計
 ================================================================
 
-- jQuery で処理を書く場合、一つの関数にベタッと書きがち
+- jQueryで処理を書く場合、1つの関数にベタッと書きがち
 - 問題点
   - 読めないコードになる
   - テストが難しい
 
-[MVC の章](./mvc.md)で挙げたブックマークページの例
+[MVC の章](./mvc.md)で挙げたブックマークページの例。
 
 ```javascript
 (function () {
@@ -31,15 +31,15 @@ jQuery でのページ設計
 })();
 ```
 
-本項では、上記のコードをリファクタしつつ MVP / MVC パターンを紹介する
+本項では、上記のコードをリファクタしつつMVP / MVCパターンを紹介する。
 
 
 ## まずは構造化
 
-初期化とそれ以外を分離
+初期化とそれ以外を分離。
 
 * 初期化
-  * 必要な DOM 要素の取得
+  * 必要なDOM要素の取得
   * データの初期化
   * イベントリスナーの登録
 * それ以外
@@ -78,14 +78,14 @@ class BookmarkPage {
 ```
 
 
-## Model の作成
+## Modelの作成
 
-複雑になると Model が出来たりする
+複雑になるとModelが出来たりする。
 
-- User, Diary, Entry といった Entity クラスとか
-- サーバへのアクセスをラップしてくれる Service っぽいとか
+- User, Diary, EntryといったEntityクラスとか
+- サーバへのアクセスをラップしてくれるServiceっぽいとか
 
-以下はブックマーク1件を表すクラスの例
+以下はブックマーク1件を表すクラスの例。
 
 ```javascript
 /**
@@ -113,12 +113,12 @@ class Bookmark {
 }
 ```
 
-## そして MVP へ
+## そしてMVPへ
 
-- jQuery ベタ書きから移行するには MVP の方が楽 (私見)
-  - Model の変更を View に反映するのが難しい
+- jQueryベタ書きから移行するにはMVPの方が楽 (私見)
+  - Modelの変更をViewに反映するのが難しい
 
-MVP では、 Presenter が Model の更新を明示的に View に反映します
+MVPでは、 PresenterがModelの更新を明示的にViewに反映します。
 
 ```javascript
 const BOOKMARK_TEMPLATE = _.template(`
@@ -189,18 +189,18 @@ $(function(){
 });
 ```
 
-- codepen にサンプルコード置きました
+- codepenにサンプルコード置きました
   - http://codepen.io/anon/pen/zBbQYW
 
 
-## jQuery だけで MVC
+## jQueryだけでMVC
 
-- MVC の場合、柔軟なイベントシステムが欲しくなる
-  - 大抵の MV* フレームワークはイベント機能を搭載している
-- DOM を自分で操作するのが大変
+- MVCの場合、柔軟なイベントシステムが欲しくなる
+  - 大抵のMV* フレームワークはイベント機能を搭載している
+- DOMを自分で操作するのが大変
   - リストの一部を更新する場合など
 
-以下、 jQuery だけで簡単な MVC 構成を試してみます
+以下、 jQueryだけで簡単なMVC構成を試してみます。
 
 
 ### コレクションクラスの作成
@@ -237,11 +237,11 @@ class Bookmarks {
 }
 ```
 
-続いて View, Controller を作成
+続いてView, Controllerを作成。
 
-- イベントによって M, V, C 間を疎結合に
-  - Controller が View のイベントを監視
-  - View が Model のイベントを監視
+- イベントによってM, V, C間を疎結合に
+  - ControllerがViewのイベントを監視
+  - ViewがModelのイベントを監視
 - 複雑になったときにテストしやすくなる
   - とはいえ、この実装はすごく冗長
   - 大抵の場合は何らかのフレームワークを使う
@@ -307,5 +307,5 @@ $(function(){
 });
 ```
 
-- codepen にサンプルコード置きました
+- codepenにサンプルコード置きました
   - http://codepen.io/anon/pen/AXwkOa

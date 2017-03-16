@@ -8,25 +8,25 @@
 - request
 - superagent
 
-などなど
+などなど。
 
-jQueryについては後ほど解説します
+jQueryについては後ほど解説します。
 
 
 ## fetch
 
-- XMLHttpRequest はなし崩し的に使われてきた
-- WHATWG が新しい仕様を策定中
-  - Promise ベースの API
+- XMLHttpRequestはなし崩し的に使われてきた
+- WHATWGが新しい仕様を策定中
+  - PromiseベースのAPI
   - `Headers` `Request` `Response` といったクラスを定義
   - 最近のブラウザだと使える
-    - 2016-08-16 現在では Edge, Firefox, Chrome, Opera が対応
+    - 2016-08-16現在ではEdge, Firefox, Chrome, Operaが対応
 - 参考
   - [WHATWGによる仕様](https://fetch.spec.whatwg.org/)
   - [Fetch API 解説、または Web において "Fetch する" とは何か？ - Block Rockin’ Codes](http://jxck.hatenablog.com/entry/whatwg-fetch)
 
 
-## fetch の使用例
+## fetchの使用例
 
 ```javascript
 fetch(url)
