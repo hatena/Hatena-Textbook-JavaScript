@@ -37,9 +37,9 @@ Object.getPrototypeOf(null);              // TypeError
 ```
 
 
-## JavaScript におけるクラス
+## JavaScriptにおけるクラス
 
-JavaScript のクラスの正体は関数
+JavaScriptのクラスの正体は関数。
 
 * 関数を `new` を付けて呼び出すと、コンストラクタとして作用する
   * 新しいオブジェクトを生成する
@@ -104,7 +104,7 @@ var sub = new SubClass('sub1');
 - ES2015で `Class` 構文が導入された
   - これまでのコンストラクタのシンタックスシュガー
 
-これが
+これが。
 ```javascript
 var Foo = function (name) {
     this.name = name;
@@ -114,7 +114,7 @@ Foo.prototype.sayHello = function () {
 };
 ```
 
-こうかける
+こうかける。
 ```javascript
 class Foo {
     constructor (name) {
@@ -159,4 +159,4 @@ new Bar('bar').sayFooBar();
 ```
 
 - 使える環境ではガンガン使っていこう
-  - 課題でも使って OK
+  - 課題でも使ってOK

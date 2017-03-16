@@ -3,15 +3,15 @@
 
 ## イベントドリブン
 
-ブラウザからのイベントで処理を進める方式
+ブラウザからのイベントで処理を進める方式。
 
-* 😇 イベント発火までは CPU を食わない
+* 😇 イベント発火まではCPUを食わない
 * 👿 コールバックを多用するので読みにくいかも
 * 👿 1つ1つの処理を小さくしないと、全部止まる
   * ブラウザの表示処理まで止まる
 
 
-## DOM イベントの例
+## DOMイベントの例
 
 - click
 - dblclick
@@ -38,7 +38,7 @@ document.body.addEventListener('click', function (e) {
 参考: [EventTarget.addEventListener - Web API インターフェイス | MDN](https://developer.mozilla.org/ja/DOM/element.addEventListener)
 
 
-## DOM イベントのイベントバブリング
+## DOMイベントのイベントバブリング
 
 ```html
 <p id="outer">Hello, <span id="inner">world</span>!</p>
@@ -54,12 +54,12 @@ document.body.addEventListener('click', function (e) {
 ## ページ読み込み時のイベント
 
 * `DOMContentLoaded` イベント
-  * DOM の構築が終わったあとに発生
-  * このイベント発生前に DOM をいじると壊れるので注意
+  * DOMの構築が終わったあとに発生
+  * このイベント発生前にDOMをいじると壊れるので注意
 * `load` イベント
   * 画像など、ページ内のリソースを全部ロードしたら発生
 
-初期化は次のように書くことが多い
+初期化は次のように書くことが多い。
 ```javascript
 document.addEventListener('DOMContentLoaded', function (e) {
     var elem = document.getElementById("...");
@@ -76,7 +76,7 @@ document.body.addEventListener('click', function (e) {
 });
 ```
 
-コールバックに渡されるオブジェクト
+コールバックに渡されるオブジェクト。
 
 - `target` : イベントのターゲット (クリックされた要素)
 - `clientX`, `clientY` : クリックされた場所の座標
@@ -90,7 +90,7 @@ document.body.addEventListener('click', function (e) {
 ## オブジェクトのメソッドをイベントハンドラとして使う
 
 - `this` が指す内容に注意
-  - Arrow Function を使えば大体問題ない
+  - Arrow Functionを使えば大体問題ない
 
 ```javascript
 class Notifier {

@@ -1,7 +1,7 @@
-課題 4-1 のヒント (Scala 編)
+課題4-1のヒント (Scala編)
 ================================================================
 
-## JavaScript の配置と読み込み
+## JavaScriptの配置と読み込み
 
 - `src/main/webapp/javascripts` ディレクトリにファイルを置くこと
   - `src/main/webapp/javascripts/main.js` を作成した場合、以下のようにロードする
@@ -10,10 +10,10 @@
 <script src="/javascripts/main.js"></script>
 ```
 
-## JSON へのエンコード
+## JSONへのエンコード
 
-- JSON 形式のデータを構築するためのライブラリがいくつかあるが、 Intern-Bookmark では [json4s](http://json4s.org/) を利用する
-- 以下のようなコードで `case class` のインスタンスを JSON 形式にエンコードできる
+- JSON形式のデータを構築するためのライブラリがいくつかあるが、 Intern-Bookmarkでは [json4s](http://json4s.org/) を利用する
+- 以下のようなコードで `case class` のインスタンスをJSON形式にエンコードできる
 
 ```scala
 scala> case class User(id: Long, name: String)
@@ -27,12 +27,12 @@ res0: String = {"id":42,"name":"example-user"}
 ```
 
 - `implicit` 宣言されている `formats` オブジェクトに基づいてシリアライズが行われる
-- 多くの場合、 json4s に付属の `DefaultsFormats` オブジェクトをそのまま利用するだけで十分
+- 多くの場合、 json4sに付属の `DefaultsFormats` オブジェクトをそのまま利用するだけで十分
   - `DefaultsFormats` が対応していない型のオブジェクトをシリアライズする場合、カスタマイズすることもできる
 
-- Intern-Bookmark の `internbookmark.service.Json` オブジェクトの定義は以下のとおり
+- Intern-Bookmarkの `internbookmark.service.Json` オブジェクトの定義は以下のとおり
   - `LocalDateTime` 型や `Long` 型の値のシリアライズ方式を独自に設定している
-  - Intern-Diary の実装でも、このオブジェクトと同じ実装が利用できる
+  - Intern-Diaryの実装でも、このオブジェクトと同じ実装が利用できる
 
 ```scala
 package internbookmark.service
@@ -63,7 +63,7 @@ case object LocalDateTimeSerializer extends CustomSerializer[LocalDateTime](form
 ## JSONからのデコード
 
 - エンコードと同じく [json4s](http://json4s.org/) を利用する
-- `parse` メソッドで JSON を解析して読み込んだあと、 `extractOpt` メソッドなどを用いてデータを読み込む
+- `parse` メソッドでJSONを解析して読み込んだあと、 `extractOpt` メソッドなどを用いてデータを読み込む
 
 ```scala
 scala> val json = org.json4s.jackson.JsonMethods.parse("""{"id":42,"name":"example-user"}""")
@@ -82,11 +82,11 @@ res3: Option[String] = None
 
 ## コントローラの実装
 
-- Scalatra では json4s が組込まれており、リクエストから JSON を読み込んで、レスポンスとして JSON を返すようなコントローラを簡単に実装できる
+- Scalatraではjson4sが組込まれており、リクエストからJSONを読み込んで、レスポンスとしてJSONを返すようなコントローラを簡単に実装できる
 - 自分で `parse` したり `write` したりする必要はない
 
-- 以下のコードは Intern-Bookmark の `internbookmark.web.BookmarkAPIWeb` trait から抜粋したもの
-  - `internbookmark.web.BookmarkWeb` に mixin して利用されている
+- 以下のコードはIntern-Bookmarkの `internbookmark.web.BookmarkAPIWeb` traitから抜粋したもの
+  - `internbookmark.web.BookmarkWeb` にmixinして利用されている
 
 ```scala
 

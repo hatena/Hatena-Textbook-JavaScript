@@ -9,7 +9,7 @@
 
 ## 変数には型がない
 
-同じ変数にいろんな型の値を入れられる
+同じ変数にいろんな型の値を代入できます。
 
 ```javascript
 var foo = "";  // 文字列
@@ -20,26 +20,26 @@ foo = {};      // オブジェクトも入る
 
 ## 値の型
 
-Ruby と違い「すべての値はオブジェクト」ではない。
+Rubyと違い「すべての値はオブジェクト」ではない。
 
 * プリミティブ値
-  * Undefined 型
-  * Null 型
-  * Boolean 型
-  * Number 型
-  * Symbol 型
-  * String 型
-* Object 型
+  * Undefined型
+  * Null型
+  * Boolean型
+  * Number型
+  * Symbol型
+  * String型
+* Object型
 
 
 ## [プリミティブ値とリテラル](http://www.ecma-international.org/ecma-262/7.0/#sec-primitive-value)
 
 参考: [文法とデータ型 - JavaScript | MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Grammar_and_types#Data_structures_and_types)
 
-### 文字列 (String 型)
+### 文字列 (String型)
 
-* 文字列は UTF-16 で表現される
-* 3 種類のリテラル
+* 文字列はUTF-16で表現される
+* 3種類のリテラル
 
 ```javascript
 var str1 = "`\\n` などのエスケープシーケンスが使える\n(改行)";
@@ -52,10 +52,10 @@ var str4 = `${'この' + '様に'} 式を埋め込んだり、
 
 参考: [Template literal - JavaScript | MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/template_strings)
 
-### 数値 (Number 型)
+### 数値 (Number型)
 
-* 数値は IEEE 754 標準の 64 ビット浮動小数点数
-* 整数値で表現できるのは 53 ビットまで
+* 数値はIEEE 754標準の64ビット浮動小数点数
+* 整数値で表現できるのは53ビットまで
 * 整数とみなしてビット演算できる
 
 ```javascript
@@ -70,14 +70,14 @@ NaN; // 数値ではないことを表す値 (Not a Number)
 * `NaN` の存在は忘れがちなので注意
 * 条件式で `0 <= NaN` も `0 >= NaN` も偽とか、`NaN === NaN` が偽とか
 
-### 真偽値 (Boolean 型)
+### 真偽値 (Boolean型)
 
 ```javascript
 true
 false
 ```
 
-### 未定義値 (Undefined 型)
+### 未定義値 (Undefined型)
 
 * 宣言だけされて代入されてない変数の値は `undefined`
 
@@ -85,18 +85,18 @@ false
 undefined // キーワードではなく定義済みの変数
 ```
 
-### Null 値 (Null 型)
+### Null値 (Null型)
 
 ```javascript
 null // `null` はキーワード
 ```
 
 
-## オブジェクト (Object 型)
+## オブジェクト (Object型)
 
 * オブジェクトはプロパティの集合
   * プロパティはキーと値の組
-* つまり JS におけるオブジェクトとは辞書 (連想配列、ハッシュ) のようなもの
+* つまりJSにおけるオブジェクトとは辞書 (連想配列、ハッシュ) のようなもの
 * 実際には単純な辞書 (key-value pair) ではない
   * プロパティに属性があったり、オブジェクトが内部プロパティを持ってたり、関数の場合は呼び出しができたりする
 
@@ -132,7 +132,7 @@ obj.name = "new name"; // 改名しました
 
 ### アクセサプロパティ
 
-オブジェクトのプロパティに setter, getter を設定できる
+オブジェクトのプロパティにsetter, getterを設定できる。
 
 ```javascript
 var obj = {
@@ -151,7 +151,7 @@ obj.name; //=> "new name"
 * StringやNumberコンストラクタのインスタンス
 * ハマりやすいので使わないこと！
 
-プリミティブ値との違い
+プリミティブ値との違い。
 ```javascript
 // ラッパーオブジェクトの型は `object`
 typeof "String 値";                          // "string"
@@ -165,7 +165,7 @@ new String('yo') === new String('yo');  // false
 
 ## プリミティブ値に対するプロパティアクセス
 
-* String 型、Number 型、Boolean 型の値に対してプロパティ参照が可能
+* String型、Number型、Boolean型の値に対してプロパティ参照が可能
   * 暗黙的にラッパーオブジェクトが生成されている
   * `null`, `undefined` はできない
 * プロパティを参照するのは良い
@@ -183,8 +183,8 @@ foo.bar === undefined;  // foo.bar は存在しない
 
 ## `typeof` 演算子
 
-値の型を調べることができる
-* 注意!!!
+値の型を調べることができる。
+* 注意！!!
   * `null` は `"object"`
   * 関数は `"function"`
 
@@ -238,7 +238,7 @@ typeof alert;          // function
 
 ## 値の比較
 
-JavaScriptの関係演算子は4種類ある
+JavaScriptの関係演算子は4種類ある。
 
 - 等値演算子 `==` , 不等演算子 `!=`
 - 同値演算子 `===`, 非同値演算子 `!==`
@@ -259,21 +259,21 @@ undefined === null;  // false
 
 ### `NaN` に注意
 
-NaNは自分自身とも等しくない値
+NaNは自分自身とも等しくない値。
 
 ```
 NaN == NaN;  //=> false
 NaN === NaN; //=> false
 ```
 
-ちなみに比較演算の結果も悲惨
+ちなみに比較演算の結果も悲惨。
 
 ```
 0 < NaN;  //=> false
 0 > NaN;  //=> false
 ```
 
-文句はJavaScriptじゃなくてIEEEに言うこと
+文句はJavaScriptじゃなくてIEEEに言うこと。
 
 
 ## `undefined` と `null` の使い分け
@@ -293,7 +293,7 @@ NaN === NaN; //=> false
 
 ## 真偽評価されたときに偽になる値
 
-いわゆる falsy な値はつぎの7つ:
+いわゆるfalsyな値はつぎの7つ:。
 
 - `false`
 - `''` (空文字列)
@@ -304,14 +304,14 @@ NaN === NaN; //=> false
 - `null`
 
 [厳密には他にもある](https://developer.mozilla.org/ja/docs/Glossary/Falsy)けど気にしなくて良いです  
-他はすべて `true` と評価されます
+他はすべて `true` と評価されます。
 
 
 ## 標準オブジェクト
 
 ## 配列
 
-配列リテラルで Array オブジェクトを生成できる。
+配列リテラルでArrayオブジェクトを生成できる。
 参考: [Array - JavaScript | MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ```javascript

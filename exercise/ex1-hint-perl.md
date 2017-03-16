@@ -1,4 +1,4 @@
-課題 4-1 のヒント (Perl 編)
+課題4-1のヒント (Perl編)
 ================================================================
 
 ## JavaScriptの配置と読み込み
@@ -12,7 +12,7 @@
 
 ## JSONへのエンコード
 
-JSON形式のデータを構築するためのライブラリはいくつかあるが、ここでは [`JSON::XS`](https://metacpan.org/module/JSON::XS) を利用する
+JSON形式のデータを構築するためのライブラリはいくつかあるが、ここでは [`JSON::XS`](https://metacpan.org/module/JSON::XS) を利用する。
 
 ```perl
 use JSON::XS;
@@ -21,7 +21,7 @@ my $json_string = JSON::XS::encode_json($user);
 ```
 
 - `JSON::XS` は `bless` されたオブジェクトをJS
-  - `JSON::Types` などを用い、プレーンな HashRef を作って渡す
+  - `JSON::Types` などを用い、プレーンなHashRefを作って渡す
 - 例: あるクラスのインスタンスをJSON形式でシリアライズしたい場合
   - モデルクラスに `json_hash` のようなメソッドを生やす
 
@@ -56,7 +56,7 @@ my $json_string = JSON::XS::encode_json($user->json_hash);
 
 ## JSONからのデコード
 
-エンコードの場合と同じく [`JSON::XS`](https://metacpan.org/module/JSON::XS) でデコードできる
+エンコードの場合と同じく [`JSON::XS`](https://metacpan.org/module/JSON::XS) でデコードできる。
 
 ```perl
 require JSON::XS;
@@ -67,9 +67,9 @@ my $user = Intern::Diary::Model::User->new($user_hash); # ハッシュリファ�
 
 ## コントローラの実装
 
-- コントローラに渡される `$c` を使うと、簡単に JSON 形式のレスポンスを返せる
-  - Hatena::Newbie のコンテキストオブジェクト
-- `$c->html()` の代わりに `$c->json()` を呼ぶと、 HTML ではなく JSON 形式のレスポンスが返る
+- コントローラに渡される `$c` を使うと、簡単にJSON形式のレスポンスを返せる
+  - Hatena::Newbieのコンテキストオブジェクト
+- `$c->html()` の代わりに `$c->json()` を呼ぶと、 HTMLではなくJSON形式のレスポンスが返る
   - 内部で `JSON::XS` を使っている
   - やはり `bless` されている値は渡せない
 

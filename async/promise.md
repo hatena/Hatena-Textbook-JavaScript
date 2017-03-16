@@ -5,7 +5,7 @@ Promise
 
 * ES2015で導入された
 * `then` のメソッドチェインでコールバック関数をつなげられるようにする
-  * 最近の jQuery でも使える
+  * 最近のjQueryでも使える
 
 ```javascript
 $.get("http://example.com/aaa")
@@ -17,7 +17,7 @@ $.get("http://example.com/aaa")
     });
 ```
 
-さっきのコードはこうなる。ちょっと読みやすくなる
+さっきのコードはこうなる。ちょっと読みやすくなる。
 ```javascript
 let db;
 MongoClient.connect('mongodb://localhost:27017/rssDataBase')
@@ -46,4 +46,4 @@ MongoClient.connect('mongodb://localhost:27017/rssDataBase')
     });
 ```
 
-使えるところではガンガン使っていこう
+使えるところではガンガン使っていこう。

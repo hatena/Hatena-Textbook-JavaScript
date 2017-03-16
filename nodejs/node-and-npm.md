@@ -1,20 +1,20 @@
-Node.js の基本的な使い方
+Node.jsの基本的な使い方
 ================================================================
 
 ## インストール
 
-- mac だとデフォルトで入ってます
+- macだとデフォルトで入ってます
 - そうでない方はビルド済みバイナリをダウンロード
   - https://nodejs.org/en/#download  
-- rbenv, plenv に似た ndenv というのもあります
+- rbenv, plenvに似たndenvというのもあります
   - https://github.com/riywo/ndenv
 
 
-## Node.js の実行方法
+## Node.jsの実行方法
 
-`node` コマンドを使います
+`node` コマンドを使います。
 
-- `node (ファイル名)` で JS ファイルを実行する
+- `node (ファイル名)` でJSファイルを実行する
   ```
   $ echo 'console.log("hello");' > hello.js
   $ node hello.js
@@ -27,7 +27,7 @@ Node.js の基本的な使い方
   123
   ```
 
-- `node` コマンドで REPL が開く
+- `node` コマンドでREPLが開く
   - ブラウザのコンソールと同じノリで使える
 
   ```
@@ -54,23 +54,23 @@ Node.js の基本的な使い方
 
 ## npm
 
-- Node.js 用のパッケージマネージャ
-  - Ruby でいう `gem`, Perl でいう `cpanm`
-  - 最近ではフロントエンド用のライブラリや CSS ライブラリも管理したり
+- Node.js用のパッケージマネージャ
+  - Rubyでいう `gem` 、 Perlでいう `cpanm`
+  - 最近ではフロントエンド用のライブラリやCSSライブラリも管理したり
 - 簡易タスクランナーとしても使える
   - 例: はてなブログ
     - `npm test` : テスト実行
-    - `npm run build` : JavaScript / CSS ビルド
+    - `npm run build` : JavaScript / CSSビルド
 
 
-### npm の使い方
+### npmの使い方
 
-- まずは package.json を作成する
-  - プロジェクトの名前やバージョン、依存 npm パッケージなどを記録する
-  - npm init すると対話的に作られます
+- まずはpackage.jsonを作成する
+  - プロジェクトの名前やバージョン、依存npmパッケージなどを記録する
+  - npm initすると対話的に作られます
     - `npm init -y` で質問スキップ
 
-`npm init -y` で生成されるファイル
+`npm init -y` で生成されるファイル。
 
 ```json
 {
@@ -87,10 +87,10 @@ Node.js の基本的な使い方
 }
 ```
 
-- `npm install` で npm パッケージをインストール
+- `npm install` でnpmパッケージをインストール
   - `node_modules/` 下にインストールされる
 
-インストールした npm パッケージは `require('foo')` として使える様になる
+インストールしたnpmパッケージは `require('foo')` として使える様になる。
 
 ```javascript
 // `npm install cool-ascii-faces` 済み
@@ -99,7 +99,7 @@ var cool = require('cool-ascii-faces');
 console.log(cool());  // (๑>ᴗ<๑)
 ```
 
-`npm install --save` でインストールすると、 package.json に依存パッケージとして記録される
+`npm install --save` でインストールすると、 package.jsonに依存パッケージとして記録される。
 
 ```js
 {

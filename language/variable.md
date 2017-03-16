@@ -3,14 +3,14 @@
 
 ## 変数の宣言方法
 
-宣言方法は var, let, const の3つ
+宣言方法はvar, let, constの3つ。
 
 ### var
 
 - 関数スコープの変数を宣言
-- for や if などのブロック `{}` でスコープを作らない
+- forやifなどのブロック `{}` でスコープを作らない
 
-以下のコードでは `i`, `x` がブロック内で宣言されているが、ブロックの外から参照できる
+以下のコードでは `i`, `x` がブロック内で宣言されているが、ブロックの外から参照できる。
 ```javascript
 (() => {
     for (var i = 0; i < 3; i++) { ... }
@@ -21,7 +21,7 @@
 })();
 ```
 
-内部的には次のように解釈される
+内部的には次のように解釈される。
 ```javascript
 (() => {
     var i, x;
@@ -65,7 +65,7 @@ foo = 'bar';  // TypeError: Assignment to constant variable
 
 代表的ハマりポイント！
 
-変数を var で宣言するとき、宣言より上で参照してもエラーにならない
+変数をvarで宣言するとき、宣言より上で参照してもエラーにならない。
 ```javascript
 var foo = 1;
 (function () {
@@ -75,7 +75,7 @@ var foo = 1;
 })();
 ```
 
-内部的には次のように解釈されている
+内部的には次のように解釈されている。
 ```javascript
 var foo = 1;
 (function () {
@@ -86,7 +86,7 @@ var foo = 1;
 })();
 ```
 
-let や const で宣言した変数は、宣言より前に触ろうとするとエラーが出る
+letやconstで宣言した変数は、宣言より前に触ろうとするとエラーが出る。
 ```javascript
 let foo = 1;
 (function () {
@@ -97,12 +97,12 @@ let foo = 1;
 ```
 
 
-## var と let, const の使い分け
+## varとlet, constの使い分け
 
-- 環境が許せば let, const を使おう
+- 環境が許せばlet, constを使おう
   - 最新のブラウザのみ対応すればよいとか
-  - Babel, TypeScript が使えるとか  
-- 上記以外の環境では var で我慢
+  - Babel, TypeScriptが使えるとか  
+- 上記以外の環境ではvarで我慢
   - ハマりやすいので注意  
 
 
@@ -112,7 +112,7 @@ let foo = 1;
   * 関数オブジェクト生成時に環境がつくられる
   * 値を関数の中に閉じ込めることができる
 
-クロージャでつくったカウンター
+クロージャでつくったカウンター。
 
 ```javascript
 function createCounter () {
@@ -130,7 +130,7 @@ alert(counter2()); //=> 1
 alert(counter2()); //=> 2
 ```
 
-private でつくる
+privateでつくる。
 
 ```javascript
 function defineAdd (i) {

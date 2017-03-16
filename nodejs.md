@@ -3,13 +3,13 @@ Node.js
 
 <img alt="Node.js logo" src="./nodejs/nodejs-logo.png" height="150"/>
 
-## Node.js とは
+## Node.jsとは
 
-- ブラウザの外で動く JavaScript 処理系
-  - Chrome 用に開発された V8 という実行エンジンを使っている
+- ブラウザの外で動くJavaScript処理系
+  - Chrome用に開発されたV8という実行エンジンを使っている
 - 使い道
-  - CLI ツール
-  - Web サーバー / アプリケーションサーバー
+  - CLIツール
+  - Webサーバー / アプリケーションサーバー
   - 開発用ツール
 - はてなでも多くのプロジェクトで使われています
-  - Node.js の使い方を覚えておいて損はない
+  - Node.jsの使い方を覚えておいて損はない

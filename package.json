@@ -4,7 +4,7 @@
   "description": "JavaScript TextBook by Hatena",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "textlint ajax architecture async browser exercise language nodejs *.md",
     "start": "gitbook serve",
     "build": "rm -rf docs && gitbook build && cp -r _book docs",
     "pdf": "gitbook pdf . hatena-textbook-javascript.pdf"
@@ -18,5 +18,10 @@
   "license": "CC BY 2.1 JP",
   "dependencies": {
     "gitbook-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "textlint": "^7.3.0",
+    "textlint-rule-preset-ja-technical-writing": "^0.1.3",
+    "textlint-rule-preset-jtf-style": "^2.2.3"
   }
 }
