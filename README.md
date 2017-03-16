@@ -1,6 +1,8 @@
 はてな教科書JavaScript編
 ================================================================
 
+[![Build Status](http://img.shields.io/travis/hatena/Hatena-Textbook-JavaScript.svg?branch=master&style=flat-square)](https://travis-ci.org/hatena/Hatena-Textbook-JavaScript)
+
 ## 講義の目的
 
 * JavaScriptについて、自分で調べて学習するための基礎知識を身につける
