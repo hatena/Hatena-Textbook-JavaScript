@@ -7,8 +7,7 @@
 - axios
 - request
 - superagent
-
-などなど。
+- etc...
 
 jQueryについては後ほど解説します。
 

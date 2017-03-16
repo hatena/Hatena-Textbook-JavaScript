@@ -15,8 +15,7 @@ C言語やJavaあたりと似た文法。
 * ループ: `while` `for` `for-in`
   * `break` で抜けたり `continue` で次に進んだり
 * try文: `try` `catch` `finally`
-
-などなど。
+* etc...
 
 
 ## [式](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-expressions)
@@ -28,8 +27,7 @@ C言語やJavaあたりと似た文法。
 * 関数式
 * 関数呼び出し: `foo()`
 * インスタンスの生成: `new Date()`
-
-などなど。
+* etc...
 
 
 ## 演算子
