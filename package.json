@@ -18,5 +18,10 @@
   "license": "CC BY 2.1 JP",
   "dependencies": {
     "gitbook-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "textlint": "^7.3.0",
+    "textlint-rule-preset-ja-technical-writing": "^0.1.3",
+    "textlint-rule-preset-jtf-style": "^2.2.3"
   }
 }
