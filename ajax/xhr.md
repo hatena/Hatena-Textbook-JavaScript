@@ -40,7 +40,7 @@ xhr.onreadystatechange = (e) => { ... };
 
 // クエリパラメータをつくる
 var params = { a: 1, b: 'Hi there' };
-var pairs = Object.keys(data).map((key) => {
+var pairs = Object.keys(params).map((key) => {
     return `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`;
 });
 var data = pairs.join('&');  // data === 'a=1&b=Hi%20there'
