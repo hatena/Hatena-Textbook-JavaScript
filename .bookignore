@@ -1,0 +1,8 @@
+.gitignore
+.gitattributes
+package.json
+yarn.lock
+.textlintrc
+.travis.yml
+deploy_key.enc
+deploy.sh

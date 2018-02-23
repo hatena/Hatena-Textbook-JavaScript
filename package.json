@@ -6,7 +6,7 @@
   "scripts": {
     "test": "textlint ajax architecture async browser exercise language nodejs *.md",
     "start": "gitbook serve",
-    "build": "rm -rf docs && gitbook build && cp -r _book docs",
+    "build": "rm -rf docs/**/* && gitbook build && cp -a _book/* docs",
     "pdf": "gitbook pdf . hatena-textbook-javascript.pdf"
   },
   "repository": {

@@ -5,5 +5,10 @@ node_js:
 cache:
   directories:
   - node_modules
+env:
+  global:
+  - ENCRYPTION_LABEL: "1af81b20c5ba"
+  - COMMIT_AUTHOR_EMAIL: "fand.gmork@gmail.com"
 script:
 - npm test
+- bash deploy.sh
