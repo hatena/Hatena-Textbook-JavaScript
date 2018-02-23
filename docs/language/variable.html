@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>変数 · GitBook</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>変数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -700,18 +700,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x5909;&#x6570;">&#x5909;&#x6570;</h2><h2 id="&#x5909;&#x6570;&#x306E;&#x5BA3;&#x8A00;&#x65B9;&#x6CD5;">&#x5909;&#x6570;&#x306E;&#x5BA3;&#x8A00;&#x65B9;&#x6CD5;</h2><p>&#x5BA3;&#x8A00;&#x65B9;&#x6CD5;&#x306F; var, let, const &#x306E;3&#x3064;</p><h3 id="var">var</h3><ul><li>&#x95A2;&#x6570;&#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x306E;&#x5909;&#x6570;&#x3092;&#x5BA3;&#x8A00;
-</li>
-<li>for &#x3084; if &#x306A;&#x3069;&#x306E;&#x30D6;&#x30ED;&#x30C3;&#x30AF; <code>{}</code> &#x3067;&#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x3092;&#x4F5C;&#x3089;&#x306A;&#x3044;
-</li></ul>
-<p>&#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3067;&#x306F; <code>i</code>, <code>x</code> &#x304C;&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x5185;&#x3067;&#x5BA3;&#x8A00;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x304C;&#x3001;&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x306E;&#x5916;&#x304B;&#x3089;&#x53C2;&#x7167;&#x3067;&#x304D;&#x308B;</p><pre><code class="lang-javascript">(() =&gt; {
+                                <h2 id="&#x5909;&#x6570;">&#x5909;&#x6570;</h2>
+<h2 id="&#x5909;&#x6570;&#x306E;&#x5BA3;&#x8A00;&#x65B9;&#x6CD5;">&#x5909;&#x6570;&#x306E;&#x5BA3;&#x8A00;&#x65B9;&#x6CD5;</h2>
+<p>&#x5BA3;&#x8A00;&#x65B9;&#x6CD5;&#x306F;var, let, const&#x306E;3&#x3064;&#x3002;</p>
+<h3 id="var">var</h3>
+<ul>
+<li>&#x95A2;&#x6570;&#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x306E;&#x5909;&#x6570;&#x3092;&#x5BA3;&#x8A00;</li>
+<li>for&#x3084;if&#x306A;&#x3069;&#x306E;&#x30D6;&#x30ED;&#x30C3;&#x30AF; <code>{}</code> &#x3067;&#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x3092;&#x4F5C;&#x3089;&#x306A;&#x3044;</li>
+</ul>
+<p>&#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3067;&#x306F; <code>i</code>, <code>x</code> &#x304C;&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x5185;&#x3067;&#x5BA3;&#x8A00;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x304C;&#x3001;&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x306E;&#x5916;&#x304B;&#x3089;&#x53C2;&#x7167;&#x3067;&#x304D;&#x308B;&#x3002;</p>
+<pre><code class="lang-javascript">(() =&gt; {
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++) { ... }
     <span class="hljs-built_in">console</span>.log(i);  <span class="hljs-comment">// 3</span>
 
     <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) { <span class="hljs-keyword">var</span> x = <span class="hljs-number">100</span>; }
     <span class="hljs-built_in">console</span>.log(x);  <span class="hljs-comment">// 100</span>
-})();</code></pre>
-<p>&#x5185;&#x90E8;&#x7684;&#x306B;&#x306F;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B;&#x89E3;&#x91C8;&#x3055;&#x308C;&#x308B;</p><pre><code class="lang-javascript">(() =&gt; {
+})();
+</code></pre>
+<p>&#x5185;&#x90E8;&#x7684;&#x306B;&#x306F;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B;&#x89E3;&#x91C8;&#x3055;&#x308C;&#x308B;&#x3002;</p>
+<pre><code class="lang-javascript">(() =&gt; {
     <span class="hljs-keyword">var</span> i, x;
 
     <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++) { ... }
@@ -719,55 +726,77 @@
 
     <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) { x = <span class="hljs-number">100</span>; }
     <span class="hljs-built_in">console</span>.log(x);
-})();</code></pre>
-<h3 id="let">let</h3><ul><li>&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x306E;&#x5909;&#x6570;&#x3092;&#x5BA3;&#x8A00;
-</li></ul>
+})();
+</code></pre>
+<h3 id="let">let</h3>
+<ul>
+<li>&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x306E;&#x5909;&#x6570;&#x3092;&#x5BA3;&#x8A00;</li>
+</ul>
 <pre><code class="lang-javascript">(() =&gt; {
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++) { <span class="hljs-number">1</span> }
     <span class="hljs-built_in">console</span>.log(i);  <span class="hljs-comment">// ReferenceError: i is not defined</span>
-})();</code></pre>
+})();
+</code></pre>
 <pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) { <span class="hljs-keyword">let</span> x = <span class="hljs-number">100</span>; }
-<span class="hljs-built_in">console</span>.log(x);  <span class="hljs-comment">// ReferenceError: x is not defined</span></code></pre>
-<h3 id="const">const</h3><ul><li>&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x306E;&#x5B9A;&#x6570;&#x3092;&#x5BA3;&#x8A00;
-</li>
-<li>&#x4E00;&#x5EA6;&#x5B9A;&#x7FA9;&#x3057;&#x305F;&#x3089;&#x518D;&#x4EE3;&#x5165;&#x3067;&#x304D;&#x306A;&#x3044;
-</li></ul>
+<span class="hljs-built_in">console</span>.log(x);  <span class="hljs-comment">// ReferenceError: x is not defined</span>
+</code></pre>
+<h3 id="const">const</h3>
+<ul>
+<li>&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x306E;&#x5B9A;&#x6570;&#x3092;&#x5BA3;&#x8A00;</li>
+<li>&#x4E00;&#x5EA6;&#x5B9A;&#x7FA9;&#x3057;&#x305F;&#x3089;&#x518D;&#x4EE3;&#x5165;&#x3067;&#x304D;&#x306A;&#x3044;</li>
+</ul>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> foo = <span class="hljs-string">&apos;foo&apos;</span>;
-foo = <span class="hljs-string">&apos;bar&apos;</span>;  <span class="hljs-comment">// TypeError: Assignment to constant variable</span></code></pre>
-<h2 id="&#x5909;&#x6570;&#x306E;&#x5DFB;&#x304D;&#x4E0A;&#x3052;-hoisting">&#x5909;&#x6570;&#x306E;&#x5DFB;&#x304D;&#x4E0A;&#x3052; (hoisting)</h2><p>&#x4EE3;&#x8868;&#x7684;&#x30CF;&#x30DE;&#x308A;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#xFF01;</p><p>&#x5909;&#x6570;&#x3092; var &#x3067;&#x5BA3;&#x8A00;&#x3059;&#x308B;&#x3068;&#x304D;&#x3001;&#x5BA3;&#x8A00;&#x3088;&#x308A;&#x4E0A;&#x3067;&#x53C2;&#x7167;&#x3057;&#x3066;&#x3082;&#x30A8;&#x30E9;&#x30FC;&#x306B;&#x306A;&#x3089;&#x306A;&#x3044;</p><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> foo = <span class="hljs-number">1</span>;
+foo = <span class="hljs-string">&apos;bar&apos;</span>;  <span class="hljs-comment">// TypeError: Assignment to constant variable</span>
+</code></pre>
+<h2 id="&#x5909;&#x6570;&#x306E;&#x5DFB;&#x304D;&#x4E0A;&#x3052;-hoisting">&#x5909;&#x6570;&#x306E;&#x5DFB;&#x304D;&#x4E0A;&#x3052; (hoisting)</h2>
+<p>&#x4EE3;&#x8868;&#x7684;&#x30CF;&#x30DE;&#x308A;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#xFF01;</p>
+<p>&#x5909;&#x6570;&#x3092;var&#x3067;&#x5BA3;&#x8A00;&#x3059;&#x308B;&#x3068;&#x304D;&#x3001;&#x5BA3;&#x8A00;&#x3088;&#x308A;&#x4E0A;&#x3067;&#x53C2;&#x7167;&#x3057;&#x3066;&#x3082;&#x30A8;&#x30E9;&#x30FC;&#x306B;&#x306A;&#x3089;&#x306A;&#x3044;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> foo = <span class="hljs-number">1</span>;
 (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
     <span class="hljs-built_in">console</span>.log(foo);  <span class="hljs-comment">// undefined</span>
     <span class="hljs-keyword">var</span> foo = <span class="hljs-number">2</span>;
     <span class="hljs-built_in">console</span>.log(foo);  <span class="hljs-comment">// 2</span>
-})();</code></pre>
-<p>&#x5185;&#x90E8;&#x7684;&#x306B;&#x306F;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B;&#x89E3;&#x91C8;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;</p><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> foo = <span class="hljs-number">1</span>;
+})();
+</code></pre>
+<p>&#x5185;&#x90E8;&#x7684;&#x306B;&#x306F;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B;&#x89E3;&#x91C8;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> foo = <span class="hljs-number">1</span>;
 (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">var</span> foo;     <span class="hljs-comment">// &#x5BA3;&#x8A00;&#x3092;&#x95A2;&#x6570;&#x306E;&#x5148;&#x982D;&#x306B;&#x5DFB;&#x304D;&#x4E0A;&#x3052;&#x308B;</span>
     alert(foo);  <span class="hljs-comment">// &#x4EE3;&#x5165;&#x306F;&#x307E;&#x3060;&#x306A;&#x306E;&#x3067; undefined</span>
     foo = <span class="hljs-number">2</span>;
     alert(foo);
-})();</code></pre>
-<p>let &#x3084; const &#x3067;&#x5BA3;&#x8A00;&#x3057;&#x305F;&#x5909;&#x6570;&#x306F;&#x3001;&#x5BA3;&#x8A00;&#x3088;&#x308A;&#x524D;&#x306B;&#x89E6;&#x308D;&#x3046;&#x3068;&#x3059;&#x308B;&#x3068;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x51FA;&#x308B;</p><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> foo = <span class="hljs-number">1</span>;
+})();
+</code></pre>
+<p>let&#x3084;const&#x3067;&#x5BA3;&#x8A00;&#x3057;&#x305F;&#x5909;&#x6570;&#x306F;&#x3001;&#x5BA3;&#x8A00;&#x3088;&#x308A;&#x524D;&#x306B;&#x89E6;&#x308D;&#x3046;&#x3068;&#x3059;&#x308B;&#x3068;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x51FA;&#x308B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> foo = <span class="hljs-number">1</span>;
 (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
     <span class="hljs-built_in">console</span>.log(foo);  <span class="hljs-comment">// ReferenceError: foo is not defined</span>
     <span class="hljs-keyword">let</span> foo = <span class="hljs-number">2</span>;
     <span class="hljs-built_in">console</span>.log(foo);  <span class="hljs-comment">// &#x5B9F;&#x884C;&#x3055;&#x308C;&#x306A;&#x3044;</span>
-})();</code></pre>
-<h2 id="var-&#x3068;-let-const-&#x306E;&#x4F7F;&#x3044;&#x5206;&#x3051;">var &#x3068; let, const &#x306E;&#x4F7F;&#x3044;&#x5206;&#x3051;</h2><ul><li><p>&#x74B0;&#x5883;&#x304C;&#x8A31;&#x305B;&#x3070; let, const &#x3092;&#x4F7F;&#x304A;&#x3046;</p><ul><li>&#x6700;&#x65B0;&#x306E;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306E;&#x307F;&#x5BFE;&#x5FDC;&#x3059;&#x308C;&#x3070;&#x3088;&#x3044;&#x3068;&#x304B;
+})();
+</code></pre>
+<h2 id="var&#x3068;let-const&#x306E;&#x4F7F;&#x3044;&#x5206;&#x3051;">var&#x3068;let, const&#x306E;&#x4F7F;&#x3044;&#x5206;&#x3051;</h2>
+<ul>
+<li>&#x74B0;&#x5883;&#x304C;&#x8A31;&#x305B;&#x3070;let, const&#x3092;&#x4F7F;&#x304A;&#x3046;<ul>
+<li>&#x6700;&#x65B0;&#x306E;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306E;&#x307F;&#x5BFE;&#x5FDC;&#x3059;&#x308C;&#x3070;&#x3088;&#x3044;&#x3068;&#x304B;</li>
+<li>Babel, TypeScript&#x304C;&#x4F7F;&#x3048;&#x308B;&#x3068;&#x304B;  </li>
+</ul>
 </li>
-<li>Babel, TypeScript &#x304C;&#x4F7F;&#x3048;&#x308B;&#x3068;&#x304B;  
-</li></ul>
+<li>&#x4E0A;&#x8A18;&#x4EE5;&#x5916;&#x306E;&#x74B0;&#x5883;&#x3067;&#x306F;var&#x3067;&#x6211;&#x6162;<ul>
+<li>&#x30CF;&#x30DE;&#x308A;&#x3084;&#x3059;&#x3044;&#x306E;&#x3067;&#x6CE8;&#x610F;  </li>
+</ul>
 </li>
-<li><p>&#x4E0A;&#x8A18;&#x4EE5;&#x5916;&#x306E;&#x74B0;&#x5883;&#x3067;&#x306F; var &#x3067;&#x6211;&#x6162;</p><ul><li>&#x30CF;&#x30DE;&#x308A;&#x3084;&#x3059;&#x3044;&#x306E;&#x3067;&#x6CE8;&#x610F;  
-</li></ul>
-</li></ul>
-<h2 id="&#x30AF;&#x30ED;&#x30FC;&#x30B8;&#x30E3;">&#x30AF;&#x30ED;&#x30FC;&#x30B8;&#x30E3;</h2><ul><li>&#x5909;&#x6570;&#x306F;&#x57FA;&#x672C;&#x7684;&#x306B;&#x95A2;&#x6570;&#x30B9;&#x30B3;&#x30FC;&#x30D7;
-<ul><li>&#x95A2;&#x6570;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x751F;&#x6210;&#x6642;&#x306B;&#x74B0;&#x5883;&#x304C;&#x3064;&#x304F;&#x3089;&#x308C;&#x308B;
+</ul>
+<h2 id="&#x30AF;&#x30ED;&#x30FC;&#x30B8;&#x30E3;">&#x30AF;&#x30ED;&#x30FC;&#x30B8;&#x30E3;</h2>
+<ul>
+<li>&#x5909;&#x6570;&#x306F;&#x57FA;&#x672C;&#x7684;&#x306B;&#x95A2;&#x6570;&#x30B9;&#x30B3;&#x30FC;&#x30D7;<ul>
+<li>&#x95A2;&#x6570;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x751F;&#x6210;&#x6642;&#x306B;&#x74B0;&#x5883;&#x304C;&#x3064;&#x304F;&#x3089;&#x308C;&#x308B;</li>
+<li>&#x5024;&#x3092;&#x95A2;&#x6570;&#x306E;&#x4E2D;&#x306B;&#x9589;&#x3058;&#x8FBC;&#x3081;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;</li>
+</ul>
 </li>
-<li>&#x5024;&#x3092;&#x95A2;&#x6570;&#x306E;&#x4E2D;&#x306B;&#x9589;&#x3058;&#x8FBC;&#x3081;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;
-</li></ul>
-</li></ul>
-<p>&#x30AF;&#x30ED;&#x30FC;&#x30B8;&#x30E3;&#x3067;&#x3064;&#x304F;&#x3063;&#x305F;&#x30AB;&#x30A6;&#x30F3;&#x30BF;&#x30FC;</p><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createCounter</span> (<span class="hljs-params"></span>) </span>{
+</ul>
+<p>&#x30AF;&#x30ED;&#x30FC;&#x30B8;&#x30E3;&#x3067;&#x3064;&#x304F;&#x3063;&#x305F;&#x30AB;&#x30A6;&#x30F3;&#x30BF;&#x30FC;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createCounter</span> (<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;
     <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
         <span class="hljs-keyword">return</span> ++i;
@@ -779,8 +808,10 @@ foo = <span class="hljs-string">&apos;bar&apos;</span>;  <span class="hljs-comme
 alert(counter1()); <span class="hljs-comment">//=&gt; 1</span>
 alert(counter1()); <span class="hljs-comment">//=&gt; 2</span>
 alert(counter2()); <span class="hljs-comment">//=&gt; 1</span>
-alert(counter2()); <span class="hljs-comment">//=&gt; 2</span></code></pre>
-<p>private &#x3067;&#x3064;&#x304F;&#x308B;</p><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">defineAdd</span> (<span class="hljs-params">i</span>) </span>{
+alert(counter2()); <span class="hljs-comment">//=&gt; 2</span>
+</code></pre>
+<p>private&#x3067;&#x3064;&#x304F;&#x308B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">defineAdd</span> (<span class="hljs-params">i</span>) </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">v</span>) </span>{
         <span class="hljs-keyword">return</span> i + v;
     };
@@ -790,7 +821,8 @@ alert(counter2()); <span class="hljs-comment">//=&gt; 2</span></code></pre>
 <span class="hljs-keyword">var</span> add2 = defineAdd(<span class="hljs-number">2</span>);
 alert(add1(<span class="hljs-number">1</span>)); <span class="hljs-comment">//=&gt; 2</span>
 alert(add2(<span class="hljs-number">1</span>)); <span class="hljs-comment">//=&gt; 3</span>
-alert(defineAdd(<span class="hljs-number">1</span>)(<span class="hljs-number">2</span>)); <span class="hljs-comment">//=&gt; 3</span></code></pre>
+alert(defineAdd(<span class="hljs-number">1</span>)(<span class="hljs-number">2</span>)); <span class="hljs-comment">//=&gt; 3</span>
+</code></pre>
 
                                 
                                 </section>
@@ -834,7 +866,7 @@ alert(defineAdd(<span class="hljs-number">1</span>)(<span class="hljs-number">2<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"変数","level":"2.1.4","depth":2,"next":{"title":"クラス","level":"2.1.5","depth":2,"path":"language/class.md","ref":"language/class.md","articles":[]},"previous":{"title":"関数","level":"2.1.3","depth":2,"path":"language/function.md","ref":"language/function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/variable.md","mtime":"2016-10-03T08:05:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-21T07:08:27.802Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"変数","level":"2.1.4","depth":2,"next":{"title":"クラス","level":"2.1.5","depth":2,"path":"language/class.md","ref":"language/class.md","articles":[]},"previous":{"title":"関数","level":"2.1.3","depth":2,"path":"language/function.md","ref":"language/function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/variable.md","mtime":"2018-02-23T12:53:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T12:59:28.317Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

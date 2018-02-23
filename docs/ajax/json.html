@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>JSON · GitBook</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JSON · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -700,36 +700,46 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="json">JSON</h1><p>Ajax &#x51E6;&#x7406;&#x3067;&#x306F; JSON &#x3092;&#x983B;&#x7E41;&#x306B;&#x4F7F;&#x3044;&#x307E;&#x3059;</p><ul><li><p>JSON</p><ul><li>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x30B7;&#x30EA;&#x30A2;&#x30E9;&#x30A4;&#x30BA;&#x5F62;&#x5F0F;&#x306E;&#x4E00;&#x7A2E;
+                                <h1 id="json">JSON</h1>
+<p>Ajax&#x51E6;&#x7406;&#x3067;&#x306F;JSON&#x3092;&#x983B;&#x7E41;&#x306B;&#x4F7F;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<ul>
+<li>JSON<ul>
+<li>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x30B7;&#x30EA;&#x30A2;&#x30E9;&#x30A4;&#x30BA;&#x5F62;&#x5F0F;&#x306E;&#x4E00;&#x7A2E;</li>
+<li>JS&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x30EA;&#x30C6;&#x30E9;&#x30EB;&#x3068;&#x4E00;&#x90E8;&#x4E92;&#x63DB;&#x6027;&#x304C;&#x3042;&#x308B;</li>
+</ul>
 </li>
-<li>JS &#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x30EA;&#x30C6;&#x30E9;&#x30EB;&#x3068;&#x4E00;&#x90E8;&#x4E92;&#x63DB;&#x6027;&#x304C;&#x3042;&#x308B;
-</li></ul>
+<li>&#x6CE8;&#x610F;&#x70B9;<ul>
+<li>&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x306F;&#x66F8;&#x3051;&#x306A;&#x3044;</li>
+<li>Object&#x306E;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x540D;&#x306F; <code>&quot;&quot;</code> &#x3067;&#x56F2;&#x3080;</li>
+<li>Array&#x3084;Object&#x306E;&#x672B;&#x5C3E;&#x306B; <code>,</code> &#x3092;&#x66F8;&#x3051;&#x306A;&#x3044;</li>
+</ul>
 </li>
-<li><p>&#x6CE8;&#x610F;&#x70B9;</p><ul><li>&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x306F;&#x66F8;&#x3051;&#x306A;&#x3044;
-</li>
-<li>Object &#x306E;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x540D;&#x306F; <code>&quot;&quot;</code> &#x3067;&#x56F2;&#x3080;
-</li>
-<li>Array &#x3084; Object &#x306E;&#x672B;&#x5C3E;&#x306B; <code>,</code> &#x3092;&#x66F8;&#x3051;&#x306A;&#x3044;
-</li></ul>
-</li></ul>
-<p>OK</p><pre><code class="lang-json"><span class="hljs-string">&apos;[1, 2, 3]&apos;</span>
-<span class="hljs-string">&apos;{&quot;a&quot;: 1}&apos;</span></code></pre>
-<p>NG</p><pre><code class="lang-json"><span class="hljs-string">&apos;[1, 2, 3,]&apos;</span>
+</ul>
+<p>OK</p>
+<pre><code class="lang-json"><span class="hljs-string">&apos;[1, 2, 3]&apos;</span>
+<span class="hljs-string">&apos;{&quot;a&quot;: 1}&apos;</span>
+</code></pre>
+<p>NG</p>
+<pre><code class="lang-json"><span class="hljs-string">&apos;[1, 2, 3,]&apos;</span>
 <span class="hljs-string">&apos;{a: 1}&apos;</span>
 <span class="hljs-string">&apos;{a: 1,}&apos;</span>
-<span class="hljs-string">&apos;{&quot;name&quot;: &quot;hoge&quot;}  // TODO: &#x3042;&#x3068;&#x3067;&#x76F4;&#x3059;&apos;</span></code></pre>
-<h2 id="js-&#x3067;-json-&#x3092;&#x6271;&#x3046;">JS &#x3067; JSON &#x3092;&#x6271;&#x3046;</h2><ul><li><code>window.JSON</code>
-<ul><li><code>JSON.stringify</code>:  &#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092; JSON &#x5F62;&#x5F0F;&#x3067;&#x30B7;&#x30EA;&#x30A2;&#x30E9;&#x30A4;&#x30BA;&#x3059;&#x308B;
+<span class="hljs-string">&apos;{&quot;name&quot;: &quot;hoge&quot;}  // TODO: &#x3042;&#x3068;&#x3067;&#x76F4;&#x3059;&apos;</span>
+</code></pre>
+<h2 id="js&#x3067;json&#x3092;&#x6271;&#x3046;">JS&#x3067;JSON&#x3092;&#x6271;&#x3046;</h2>
+<ul>
+<li><code>window.JSON</code><ul>
+<li><code>JSON.stringify</code>:  &#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;JSON&#x5F62;&#x5F0F;&#x3067;&#x30B7;&#x30EA;&#x30A2;&#x30E9;&#x30A4;&#x30BA;&#x3059;&#x308B;</li>
+<li><code>JSON.parse</code>: JSON&#x6587;&#x5B57;&#x5217;&#x3092;&#x30D1;&#x30FC;&#x30B9;&#x3057;&#x3066;&#x5024;&#x3092;&#x8FD4;&#x3059;</li>
+</ul>
 </li>
-<li><code>JSON.parse</code>: JSON &#x6587;&#x5B57;&#x5217;&#x3092;&#x30D1;&#x30FC;&#x30B9;&#x3057;&#x3066;&#x5024;&#x3092;&#x8FD4;&#x3059;
-</li></ul>
-</li></ul>
+</ul>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> obj = {
     foo : <span class="hljs-number">1</span>,
     bar : <span class="hljs-number">2</span>,
 };
 <span class="hljs-keyword">var</span> str    = <span class="hljs-built_in">JSON</span>.stringify(obj); <span class="hljs-comment">// &apos;{&quot;foo&quot;:1,&quot;bar&quot;:2}&apos; (&#x6587;&#x5B57;&#x5217;)</span>
-<span class="hljs-keyword">var</span> parsed = <span class="hljs-built_in">JSON</span>.parse(str);     <span class="hljs-comment">//  {foo: 1, bar: 2}   (Object)</span></code></pre>
+<span class="hljs-keyword">var</span> parsed = <span class="hljs-built_in">JSON</span>.parse(str);     <span class="hljs-comment">//  {foo: 1, bar: 2}   (Object)</span>
+</code></pre>
 
                                 
                                 </section>
@@ -773,7 +783,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JSON","level":"5.1.4","depth":2,"next":{"title":"jQuery","level":"6.1","depth":1,"path":"jquery.md","ref":"jquery.md","articles":[]},"previous":{"title":"Tips","level":"5.1.3","depth":2,"path":"ajax/tips.md","ref":"ajax/tips.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ajax/json.md","mtime":"2016-10-03T08:05:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-21T07:08:27.802Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JSON","level":"5.1.4","depth":2,"next":{"title":"jQuery","level":"6.1","depth":1,"path":"jquery.md","ref":"jquery.md","articles":[]},"previous":{"title":"Tips","level":"5.1.3","depth":2,"path":"ajax/tips.md","ref":"ajax/tips.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ajax/json.md","mtime":"2018-02-23T12:53:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T12:59:28.317Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

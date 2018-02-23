@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>XMLHttpRequest · GitBook</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>XMLHttpRequest · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -700,13 +700,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="xmlhttprequest">XMLHttpRequest</h1><ul><li>IE5 &#x3067;&#x5C0E;&#x5165;&#x3055;&#x308C;&#x3001;&#x5F8C;&#x306B;&#x6A19;&#x6E96;&#x5316;&#x3055;&#x308C;&#x305F;
+                                <h1 id="xmlhttprequest">XMLHttpRequest</h1>
+<ul>
+<li>IE5&#x3067;&#x5C0E;&#x5165;&#x3055;&#x308C;&#x3001;&#x5F8C;&#x306B;&#x6A19;&#x6E96;&#x5316;&#x3055;&#x308C;&#x305F;</li>
+<li>Ajax&#x7528;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306F;&#x7686;XMLHttpRequest&#x306E;&#x30E9;&#x30C3;&#x30D1;&#x30FC;<ul>
+<li>&#x7D30;&#x304B;&#x3044;&#x5236;&#x5FA1;&#x3092;&#x3057;&#x3088;&#x3046;&#x3068;&#x3059;&#x308B;&#x3068;&#x76F4;&#x63A5;&#x3055;&#x308F;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;</li>
+</ul>
 </li>
-<li>Ajax &#x7528;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306F;&#x7686; XMLHttpRequest &#x306E;&#x30E9;&#x30C3;&#x30D1;&#x30FC;
-<ul><li>&#x7D30;&#x304B;&#x3044;&#x5236;&#x5FA1;&#x3092;&#x3057;&#x3088;&#x3046;&#x3068;&#x3059;&#x308B;&#x3068;&#x76F4;&#x63A5;&#x3055;&#x308F;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x304B;&#x3082;
-</li></ul>
-</li></ul>
-<h2 id="&#x751F;-xmlhttprequest-&#x306E;&#x3088;&#x3046;&#x3059;">&#x751F; <code>XMLHttpRequest</code> &#x306E;&#x3088;&#x3046;&#x3059;</h2><p>&#x751F;&#x3067;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x306F;&#x6EC5;&#x591A;&#x306B;&#x306A;&#x3044;&#x304C;&#x3001;&#x4E00;&#x5FDC;&#x96F0;&#x56F2;&#x6C17;&#x3060;&#x3051;&#x77E5;&#x3063;&#x3066;&#x304A;&#x3053;&#x3046;</p><pre><code class="lang-javascript"><span class="hljs-comment">// &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;</span>
+</ul>
+<h2 id="&#x751F;-xmlhttprequest-&#x306E;&#x3088;&#x3046;&#x3059;">&#x751F; <code>XMLHttpRequest</code> &#x306E;&#x3088;&#x3046;&#x3059;</h2>
+<p>&#x751F;&#x3067;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x306F;&#x6EC5;&#x591A;&#x306B;&#x306A;&#x3044;&#x304C;&#x3001;&#x4E00;&#x5FDC;&#x96F0;&#x56F2;&#x6C17;&#x3060;&#x3051;&#x77E5;&#x3063;&#x3066;&#x304A;&#x3053;&#x3046;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;</span>
 <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
 xhr.open(<span class="hljs-string">&apos;GET&apos;</span>, <span class="hljs-string">&apos;/api/foo&apos;</span>, <span class="hljs-literal">true</span>);
 
@@ -723,20 +727,23 @@ xhr.onreadystatechange = (e) =&gt; {
 };
 
 <span class="hljs-comment">// &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3092;&#x9001;&#x4FE1;</span>
-xhr.send(<span class="hljs-literal">null</span>);</code></pre>
-<p>POST &#x306E;&#x5834;&#x5408;</p><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+xhr.send(<span class="hljs-literal">null</span>);
+</code></pre>
+<p>POST&#x306E;&#x5834;&#x5408;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
 xhr.open(<span class="hljs-string">&apos;POST&apos;</span>, <span class="hljs-string">&apos;/api/foo&apos;</span>, <span class="hljs-literal">true</span>);
 xhr.onreadystatechange = (e) =&gt; { ... };
 
 <span class="hljs-comment">// &#x30AF;&#x30A8;&#x30EA;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3092;&#x3064;&#x304F;&#x308B;</span>
 <span class="hljs-keyword">var</span> params = { a: <span class="hljs-number">1</span>, b: <span class="hljs-string">&apos;Hi there&apos;</span> };
-<span class="hljs-keyword">var</span> pairs = <span class="hljs-built_in">Object</span>.keys(data).map((key) =&gt; {
+<span class="hljs-keyword">var</span> pairs = <span class="hljs-built_in">Object</span>.keys(params).map((key) =&gt; {
     <span class="hljs-keyword">return</span> <span class="hljs-string">`<span class="hljs-subst">${encodeURIComponent(key)}</span>=<span class="hljs-subst">${encodeURIComponent(params[key])}</span>`</span>;
 });
 <span class="hljs-keyword">var</span> data = pairs.join(<span class="hljs-string">&apos;&amp;&apos;</span>);  <span class="hljs-comment">// data === &apos;a=1&amp;b=Hi%20there&apos;</span>
 
 xhr.setRequestHeader(<span class="hljs-string">&apos;Content-Type&apos;</span>, <span class="hljs-string">&apos;application/x-www-form-urlencoded&apos;</span>);
-xhr.send(data);</code></pre>
+xhr.send(data);
+</code></pre>
 
                                 
                                 </section>
@@ -780,7 +787,7 @@ xhr.send(data);</code></pre>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"XMLHttpRequest","level":"5.1.1","depth":2,"next":{"title":"その他の方法","level":"5.1.2","depth":2,"path":"ajax/fetch.md","ref":"ajax/fetch.md","articles":[]},"previous":{"title":"Ajax","level":"5.1","depth":1,"path":"ajax.md","ref":"ajax.md","articles":[{"title":"XMLHttpRequest","level":"5.1.1","depth":2,"path":"ajax/xhr.md","ref":"ajax/xhr.md","articles":[]},{"title":"その他の方法","level":"5.1.2","depth":2,"path":"ajax/fetch.md","ref":"ajax/fetch.md","articles":[]},{"title":"Tips","level":"5.1.3","depth":2,"path":"ajax/tips.md","ref":"ajax/tips.md","articles":[]},{"title":"JSON","level":"5.1.4","depth":2,"path":"ajax/json.md","ref":"ajax/json.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ajax/xhr.md","mtime":"2016-10-03T08:05:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-21T07:08:27.802Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"XMLHttpRequest","level":"5.1.1","depth":2,"next":{"title":"その他の方法","level":"5.1.2","depth":2,"path":"ajax/fetch.md","ref":"ajax/fetch.md","articles":[]},"previous":{"title":"Ajax","level":"5.1","depth":1,"path":"ajax.md","ref":"ajax.md","articles":[{"title":"XMLHttpRequest","level":"5.1.1","depth":2,"path":"ajax/xhr.md","ref":"ajax/xhr.md","articles":[]},{"title":"その他の方法","level":"5.1.2","depth":2,"path":"ajax/fetch.md","ref":"ajax/fetch.md","articles":[]},{"title":"Tips","level":"5.1.3","depth":2,"path":"ajax/tips.md","ref":"ajax/tips.md","articles":[]},{"title":"JSON","level":"5.1.4","depth":2,"path":"ajax/json.md","ref":"ajax/json.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ajax/xhr.md","mtime":"2018-02-23T12:53:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T12:59:28.317Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>フロントエンド設計 · GitBook</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>フロントエンド設計 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -700,30 +700,43 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x30D5;&#x30ED;&#x30F3;&#x30C8;&#x30A8;&#x30F3;&#x30C9;&#x306B;&#x304A;&#x3051;&#x308B;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x8A2D;&#x8A08;">&#x30D5;&#x30ED;&#x30F3;&#x30C8;&#x30A8;&#x30F3;&#x30C9;&#x306B;&#x304A;&#x3051;&#x308B;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x8A2D;&#x8A08;</h1><h2 id="&#x4F8B;-&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;">&#x4F8B;: &#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;</h2><ul><li>&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x8FFD;&#x52A0;&#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x3068;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;&#x304C;&#x3042;&#x308B;&#x30DA;&#x30FC;&#x30B8;
-<ul><li>&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x3092;&#x8FFD;&#x52A0;/&#x7DE8;&#x96C6;&#x3057;&#x305F;&#x3089;&#x3001;&#x30DA;&#x30FC;&#x30B8;&#x9077;&#x79FB;&#x305B;&#x305A;&#x306B;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;&#x3092;&#x66F4;&#x65B0;&#x3057;&#x305F;&#x3044;
-</li></ul>
-</li></ul>
-<h3 id="&#x9665;&#x308A;&#x304C;&#x3061;&#x306A;&#x554F;&#x984C;">&#x9665;&#x308A;&#x304C;&#x3061;&#x306A;&#x554F;&#x984C;</h3><p>&#x521D;&#x5FC3;&#x8005;&#x304C;&#x7D20;&#x6734;&#x306B;&#x66F8;&#x304F;&#x3068;&#x3053;&#x3046;&#x306A;&#x308A;&#x304C;&#x3061;</p><p><img src="architecture/js-mvc-1.png"></p><p>&#x3053;&#x306E;&#x8A2D;&#x8A08;&#x306B;&#x306F;&#x3044;&#x304F;&#x3064;&#x304B;&#x554F;&#x984C;&#x304C;&#x3042;&#x308B;</p><ul><li><p>&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x64CD;&#x4F5C;&#x3084;&#x8868;&#x793A;&#x306E;&#x7A2E;&#x985E;&#x304C;&#x5897;&#x3048;&#x308B;&#x3068;&#x3001;&#x7D44;&#x5408;&#x305B;&#x304C;&#x81A8;&#x5927;&#x306B;</p><ul><li>&#x64CD;&#x4F5C;: &#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4F5C;&#x6210;&#x3001;&#x66F4;&#x65B0;&#x3001;&#x524A;&#x9664;&#x3001;&#x2026;&#x2026;
+                                <h1 id="&#x30D5;&#x30ED;&#x30F3;&#x30C8;&#x30A8;&#x30F3;&#x30C9;&#x306B;&#x304A;&#x3051;&#x308B;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x8A2D;&#x8A08;">&#x30D5;&#x30ED;&#x30F3;&#x30C8;&#x30A8;&#x30F3;&#x30C9;&#x306B;&#x304A;&#x3051;&#x308B;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x8A2D;&#x8A08;</h1>
+<h2 id="&#x4F8B;-&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;">&#x4F8B;: &#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;</h2>
+<ul>
+<li>&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x8FFD;&#x52A0;&#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x3068;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;&#x304C;&#x3042;&#x308B;&#x30DA;&#x30FC;&#x30B8;<ul>
+<li>&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x3092;&#x8FFD;&#x52A0;/&#x7DE8;&#x96C6;&#x3057;&#x305F;&#x3089;&#x3001;&#x30DA;&#x30FC;&#x30B8;&#x9077;&#x79FB;&#x305B;&#x305A;&#x306B;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;&#x3092;&#x66F4;&#x65B0;&#x3057;&#x305F;&#x3044;</li>
+</ul>
 </li>
-<li>&#x8868;&#x793A;: &#x5168;&#x90E8;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;&#x3001;&#x6700;&#x8FD1;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x305F;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x3001;&#x30B4;&#x30DF;&#x7BB1;&#x3001;&#x2026;&#x2026;
-</li></ul>
+</ul>
+<h3 id="&#x9665;&#x308A;&#x304C;&#x3061;&#x306A;&#x554F;&#x984C;">&#x9665;&#x308A;&#x304C;&#x3061;&#x306A;&#x554F;&#x984C;</h3>
+<p>&#x521D;&#x5FC3;&#x8005;&#x304C;&#x7D20;&#x6734;&#x306B;&#x66F8;&#x304F;&#x3068;&#x3053;&#x3046;&#x306A;&#x308A;&#x304C;&#x3061;&#x3002;</p>
+<p><img src="architecture/js-mvc-1.png" alt=""></p>
+<p>&#x3053;&#x306E;&#x8A2D;&#x8A08;&#x306B;&#x306F;&#x3044;&#x304F;&#x3064;&#x304B;&#x554F;&#x984C;&#x304C;&#x3042;&#x308B;&#x3002;</p>
+<ul>
+<li>&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x64CD;&#x4F5C;&#x3084;&#x8868;&#x793A;&#x306E;&#x7A2E;&#x985E;&#x304C;&#x5897;&#x3048;&#x308B;&#x3068;&#x3001;&#x7D44;&#x5408;&#x305B;&#x304C;&#x81A8;&#x5927;&#x306B;<ul>
+<li>&#x64CD;&#x4F5C;: &#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4F5C;&#x6210;&#x3001;&#x66F4;&#x65B0;&#x3001;&#x524A;&#x9664;&#x3001;&#x2026;&#x2026;</li>
+<li>&#x8868;&#x793A;: &#x5168;&#x90E8;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;&#x3001;&#x6700;&#x8FD1;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x305F;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x3001;&#x30B4;&#x30DF;&#x7BB1;&#x3001;&#x2026;&#x2026;</li>
+</ul>
 </li>
-<li><p>&#x901A;&#x4FE1;&#x51E6;&#x7406;&#x304C;&#x5206;&#x6563;&#x3057;&#x3066;&#x3044;&#x308B;</p><ul><li>&#x30B3;&#x30FC;&#x30C9;&#x304C;&#x91CD;&#x8907;&#x3057;&#x305F;&#x308A;
+<li>&#x901A;&#x4FE1;&#x51E6;&#x7406;&#x304C;&#x5206;&#x6563;&#x3057;&#x3066;&#x3044;&#x308B;<ul>
+<li>&#x30B3;&#x30FC;&#x30C9;&#x304C;&#x91CD;&#x8907;&#x3057;&#x305F;&#x308A;</li>
+<li>&#x540C;&#x3058;&#x5185;&#x5BB9;&#x306E;&#x901A;&#x4FE1;&#x3092;&#x4F55;&#x5EA6;&#x3082;&#x3057;&#x3066;&#x3057;&#x307E;&#x3063;&#x305F;&#x308A;</li>
+</ul>
 </li>
-<li>&#x540C;&#x3058;&#x5185;&#x5BB9;&#x306E;&#x901A;&#x4FE1;&#x3092;&#x4F55;&#x5EA6;&#x3082;&#x3057;&#x3066;&#x3057;&#x307E;&#x3063;&#x305F;&#x308A;
-</li></ul>
-</li></ul>
-<h3 id="model-&#x3068;-view-&#x306E;&#x5206;&#x96E2;&#x304C;&#x30AB;&#x30AE;">Model &#x3068; View &#x306E;&#x5206;&#x96E2;&#x304C;&#x30AB;&#x30AE;</h3><ul><li><p>Model</p><ul><li>&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;
+</ul>
+<h3 id="model&#x3068;view&#x306E;&#x5206;&#x96E2;&#x304C;&#x30AB;&#x30AE;">Model&#x3068;View&#x306E;&#x5206;&#x96E2;&#x304C;&#x30AB;&#x30AE;</h3>
+<ul>
+<li>Model<ul>
+<li>&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;</li>
+<li>&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x3068;&#x306E;&#x901A;&#x4FE1;&#x3001;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7BA1;&#x7406;</li>
+</ul>
 </li>
-<li>&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x3068;&#x306E;&#x901A;&#x4FE1;&#x3001;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7BA1;&#x7406;
-</li></ul>
+<li>View<ul>
+<li>&#x898B;&#x305F;&#x76EE;&#x306E;&#x51E6;&#x7406;</li>
+<li>DOM&#x64CD;&#x4F5C; (&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;&#x66F4;&#x65B0;)</li>
+</ul>
 </li>
-<li><p>View</p><ul><li>&#x898B;&#x305F;&#x76EE;&#x306E;&#x51E6;&#x7406;
-</li>
-<li>DOM &#x64CD;&#x4F5C; (&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x4E00;&#x89A7;&#x66F4;&#x65B0;)
-</li></ul>
-</li></ul>
+</ul>
 
                                 
                                 </section>
@@ -767,7 +780,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"フロントエンド設計","level":"7.1","depth":1,"next":{"title":"MVC","level":"7.1.1","depth":2,"path":"architecture/mvc.md","ref":"architecture/mvc.md","articles":[]},"previous":{"title":"jQuery","level":"6.1","depth":1,"path":"jquery.md","ref":"jquery.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"architecture.md","mtime":"2016-10-03T08:05:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-21T07:08:27.802Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"フロントエンド設計","level":"7.1","depth":1,"next":{"title":"MVC","level":"7.1.1","depth":2,"path":"architecture/mvc.md","ref":"architecture/mvc.md","articles":[]},"previous":{"title":"jQuery","level":"6.1","depth":1,"path":"jquery.md","ref":"jquery.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"architecture.md","mtime":"2018-02-23T12:53:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T12:59:28.317Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
