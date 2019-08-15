@@ -31,7 +31,7 @@
 
 ## Flux
 
-[![Fluxの概念図](https://facebook.github.io/flux/img/flux-simple-f8-diagram-with-client-action-1300w.png)](https://facebook.github.io/flux/docs/overview.html)
+[![Fluxの概念図](https://facebook.github.io/flux/img/overview/flux-simple-f8-diagram-with-client-action-1300w.png)](https://facebook.github.io/flux/docs/overview)
 
 * コンポーネント間の結合を薄くするため、グローバルなイベントを利用する
   * Observerパターンの一種
