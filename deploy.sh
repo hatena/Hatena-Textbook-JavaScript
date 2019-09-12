@@ -9,6 +9,8 @@ REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 COMMIT_MESSAGE="Rebuild by Travis CI"
+COMMIT_AUTHOR_NAME="hatenabot"
+COMMIT_AUTHOR_EMAIL="platform+githubhatenabot@hatena.ne.jp"
 
 # masterブランチかどうかチェック
 deploy_check_branch() {
@@ -45,22 +47,10 @@ deploy_build() {
   cd ..
 }
 
-# GitHubにpushするための準備
-deploy_register() {
-  ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
-  ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
-  ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
-  ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
-  openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ./deploy_key.enc -out ./deploy_key -d
-  chmod 600 ./deploy_key
-  eval `ssh-agent -s`
-  ssh-add ./deploy_key
-}
-
 # ビルド結果をcommit & push
 deploy_push() {
   cd docs
-  git config user.name "Travis CI"
+  git config user.name "$COMMIT_AUTHOR_NAME"
   git config user.email "$COMMIT_AUTHOR_EMAIL"
   git add -A .
   git commit -m "$COMMIT_MESSAGE"
@@ -69,8 +59,7 @@ deploy_push() {
 
 # 後始末
 deploy_reset() {
-  unset -f deploy_check_branch deploy_clone deploy_build deploy_register deploy_push deploy_reset
-  rm -rf ./deploy_key
+  unset -f deploy_check_branch deploy_clone deploy_build deploy_push deploy_reset
 }
 
 # 終了時にdeploy_resetする
