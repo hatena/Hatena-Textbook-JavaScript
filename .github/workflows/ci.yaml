@@ -16,5 +16,7 @@ jobs:
       run: yarn install
     - name: Test
       run: npm test
+    - name: Setup Remote URL
+      run: git config remote.origin.url "https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}"
     - name: Deploy
       run: bash deploy.sh

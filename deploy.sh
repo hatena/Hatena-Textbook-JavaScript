@@ -5,9 +5,6 @@ set -eux
 
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
-REPO=`git config remote.origin.url`
-SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
-SHA=`git rev-parse --verify HEAD`
 COMMIT_MESSAGE="Rebuild by Travis CI"
 COMMIT_AUTHOR_NAME="hatenabot"
 COMMIT_AUTHOR_EMAIL="platform+githubhatenabot@hatena.ne.jp"
@@ -54,7 +51,7 @@ deploy_push() {
   git config user.email "$COMMIT_AUTHOR_EMAIL"
   git add -A .
   git commit -m "$COMMIT_MESSAGE"
-  git push $SSH_REPO $TARGET_BRANCH
+  git push $TARGET_BRANCH
 }
 
 # 後始末
