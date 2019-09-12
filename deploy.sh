@@ -52,7 +52,7 @@ deploy_push() {
   git config user.email "$COMMIT_AUTHOR_EMAIL"
   git add -A .
   git commit -m "$COMMIT_MESSAGE"
-  git push $TARGET_BRANCH
+  git push $REPO $TARGET_BRANCH
 }
 
 # 後始末
