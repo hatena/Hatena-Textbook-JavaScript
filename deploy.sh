@@ -8,6 +8,7 @@ TARGET_BRANCH="gh-pages"
 COMMIT_MESSAGE="Rebuild by CI"
 COMMIT_AUTHOR_NAME="hatenabot"
 COMMIT_AUTHOR_EMAIL="platform+githubhatenabot@hatena.ne.jp"
+REPO=$(git config remote.origin.url)
 
 # masterブランチかどうかチェック
 deploy_check_branch() {
@@ -66,5 +67,4 @@ trap deploy_reset EXIT
 deploy_check_branch
 deploy_clone
 deploy_build
-deploy_register
 deploy_push
