@@ -1,23 +1,23 @@
 #!/bin/bash
-# TravisCI上でgitbookをビルドするスクリプト
+# GitHub Actions上でgitbookをビルドするスクリプト
 # 参考: https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
 set -eux
 
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
-COMMIT_MESSAGE="Rebuild by Travis CI"
+COMMIT_MESSAGE="Rebuild by CI"
 COMMIT_AUTHOR_NAME="hatenabot"
 COMMIT_AUTHOR_EMAIL="platform+githubhatenabot@hatena.ne.jp"
 
 # masterブランチかどうかチェック
 deploy_check_branch() {
   # gh-pagesブランチではビルドしない
-  if [ "$TRAVIS_BRANCH" == "$TARGET_BRANCH" ]; then
+  if [ "$GITHUB_REF" == "refs/heads/$TARGET_BRANCH" ]; then
     echo "Skipping deploy; branch is '$TARGET_BRANCH'"
     exit 0
   fi
   # master以外のブランチでは、ビルドが通るかだけチェックする
-  if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
+  if [ "$GITHUB_REF" != "refs/heads/$SOURCE_BRANCH" ]; then
     echo "Skipping deploy; just doing a build."
     npm run build
     exit 0
