@@ -1,7 +1,7 @@
 はてな教科書JavaScript編
 ================================================================
 
-[![Build Status](http://img.shields.io/travis/hatena/Hatena-Textbook-JavaScript.svg?branch=master&style=flat-square)](https://travis-ci.org/hatena/Hatena-Textbook-JavaScript)
+[![CI Status](https://github.com/hatena/Hatena-Textbook-JavaScript/workflows/CI/badge.svg)](https://github.com/hatena/Hatena-Textbook-JavaScript/actions)
 
 ## 講義の目的
 
